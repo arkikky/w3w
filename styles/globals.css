@@ -1,35 +1,51 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
-    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+@font-face {
+  font-family: 'W3W Bold';
+  src: url('w3w-Bold.woff2') format('woff2'),
+    url('w3w-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+ 
+@font-face {
+  font-family: 'W3W Regular'; 
+  src: url('w3w-Regular.woff2') format('woff2'),
+    url('w3w-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
+/* Init */
+body::-webkit-scrollbar {
+  @apply w-2.5;
 }
 
-main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+body::-webkit-scrollbar-track {
+  @apply bg-[#2d2f33];
 }
 
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+body::-webkit-scrollbar-thumb { 
+  @apply bg-[#4e525a];
+  @apply rounded-full;
+  @apply border-none; 
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/* Utilities */ 
+@layer utilities {
+  .bg-grdients-black {
+    @apply bg-gradient-to-r from-[#2D2D2D] to-[#2D2D2D];
+  }
+  
+  .bg-shadow-black {
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0) 0%, #1E1E1E 100%);
+  }
+} 
