@@ -6,22 +6,24 @@
 @tailwind utilities;
 
 /* Fonts */
-@font-face {
-  font-family: 'W3W Bold';
-  src: url('w3w-Bold.woff2') format('woff2'),
-    url('w3w-Bold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; 
-}
- 
-@font-face {
-  font-family: 'W3W Regular'; 
-  src: url('w3w-Regular.woff2') format('woff2'),
-    url('w3w-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+@layer base {
+  @font-face {
+    font-family: 'W3W Bold';
+    src: url('/assets/fonts/W3W-Bold.woff2') format('woff2'),
+      url('/assets/fonts/W3W-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+  }
+   
+  @font-face {
+    font-family: 'W3W Regular'; 
+    src: url('/assets/fonts/W3W-Regular.woff2') format('woff2'),
+      url('/assets/fonts/W3W-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 }
 
 /* Init */
