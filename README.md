@@ -24,10 +24,6 @@ This project is a very minimal starter that includes 2 sample components, a glob
 
 - [Getting Started](#getting-started)
 - [Installation options](#installation-options)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
-  - [Removing Cypress](#removing-cypress)
 
 ## Getting Started
 
