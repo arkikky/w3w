@@ -138,13 +138,13 @@ export default function Home() {
                     </div>
                     <p className="text-gray-500 font-space-mono text-sm lg:text-base font-normal leading-7 lg:leading-8 uppercase">
                       <span className="text-primary">
-                        Join the largest web3 builder
+                        Join the largest Web3 builder
                       </span>{" "}
-                      focused event in Southeast asia. An{" "}
-                      <span className="text-primary">opportunity</span> to meet
-                      people who are building on Web 3, and learning from the
-                      best minds in this space as they talk about upcoming
-                      changes and decentralized Apps.
+                      focused event in Southeast asia.{" "}
+                      <span className="text-primary">Participate</span> in the
+                      event by showcasing your innovation and advance solutions
+                      to layer 1, tech solution providers, and business
+                      founders.
                     </p>
                   </div>
                 </div>
@@ -377,8 +377,8 @@ export default function Home() {
                   3 Countries, 3 weeks, 1 Career Changing Event: Web3 week.
                 </h1>
                 <p className="text-white font-space-mono text-sm lg:text-base font-normal leading-7 lg:leading-8 uppercase mt-2">
-                  Bringing together developers, founders and enterprise builders
-                  focused on building the future of web3.
+                  Bringing together developers, founders, and community builders
+                  focused on building the future of Web3
                 </p>
               </div>
             </div>
