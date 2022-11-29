@@ -3,9 +3,9 @@ const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   content: [
-    "./public/assets/js/*.{js,jsx,tsx}",
-    "./pages/**/*.{js,jsx,tsx}",
-    "./components/**/*.{js,ts}",
+    "./public/assets/js/*.{js,jsx}",
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,tsx}",
   ],
   theme: {
     extend: {
@@ -16,6 +16,7 @@ module.exports = {
         black: {
           50: "#2C2A2A",
           100: "#1E1E1E",
+          900: "#000000",
         },
         gray: {
           100: "#555555",
@@ -39,14 +40,48 @@ module.exports = {
         tight: "-0.03em",
       },
       spacing: {
-        15: "52px",
+        14: "52px",
+        15: "56px",
         18: "72px",
+      },
+      screens: {
+        "1xl": "1440px",
+        "2xl": "1530px",
+        "3xl": "1908px",
+        "4xl": "2110px",
+        "5xl": "2526px",
+        "max-sm": {
+          max: "640px",
+        },
+        "max-md": {
+          max: "768px",
+        },
+        "max-lg": {
+          max: "1024px",
+        },
+        "max-xl": {
+          max: "1280px",
+        },
+        "max-2xl": {
+          max: "1440px",
+        },
+        "max-3xl": {
+          max: "1920px",
+        },
+        "max-4xl": {
+          max: "2560px",
+        },
+        "max-5xl": {
+          max: "3840px",
+        },
       },
       zIndex: {
         px: "1",
         0.5: "2",
-        min: "500",
+        sm: "500",
         base: "1050",
+        lg: "1550",
+        xl: "2050",
         "2xl": "2550",
         "3xl": "5050",
         "4xl": "7550",
@@ -57,6 +92,16 @@ module.exports = {
   plugins: [
     ({ addVariant }) => {
       addVariant("hocus", ["&:hover", "&:focus"]);
+    },
+
+    // Background Cover Shadow
+    ({ addUtilities }) => {
+      addUtilities({
+        ".bg-shadow-black": {
+          background:
+            "linear-gradient(180deg, rgba(30, 30, 30, 0) 0%, #1E1E1E 100%)",
+        },
+      });
     },
 
     // Container
@@ -148,6 +193,7 @@ module.exports = {
         },
         ".btn-primary": {
           backgroundColor: theme("backgroundColor.green.500"),
+          color: theme("colors.black.100"),
         },
         ".btn-outline-white": {
           backgroundColor: theme("backgroundColor.transparent"),
