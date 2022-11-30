@@ -38,7 +38,7 @@
 /* Ticket (Content List) */
 .bxTicketList {
   @apply inline-flex flex-col;
-  @apply text-white font-mono text-base uppercase;
+  @apply text-white font-fira-code text-base font-normal uppercase;
   @apply pl-0 mx-0;
 }
 

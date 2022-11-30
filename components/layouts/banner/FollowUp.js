@@ -18,7 +18,7 @@ const BnnerFollowUp = ({ id, title, desc }) => {
             <h1 className="text-white font-w3w-bold text-2xl sm:text-3xl lg:text-[40px] lg:leading-tight font-bold uppercase">
               {title}
             </h1>
-            <p className="text-white font-space-mono text-sm lg:text-base font-normal leading-7 lg:leading-8 uppercase mt-2">
+            <p className="text-white font-fira-code text-sm lg:text-base font-normal leading-7 lg:leading-8 uppercase mt-2">
               {desc}
             </p>
           </div>

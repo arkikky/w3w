@@ -15,7 +15,7 @@ import Timelines from "/components/layouts/Timelines";
 import BnnerFollowUp from "/components/layouts/banner/FollowUp";
 import Ticket from "/components/layouts/Ticket";
 import Schedule from "/components/layouts/Schedule";
-import SpeakerMentors from "/components/layouts/SpeakerMentors";
+import MentorsSpeaker from "/components/layouts/MentorsSpeaker";
 import Sponsor from "/components/layouts/Sponsor";
 import MediaPartner from "/components/layouts/MediaPartner";
 import FromCreators from "/components/layouts/FromCreators";
@@ -66,7 +66,10 @@ export default function Home() {
           {/* Header */}
           <Header></Header>
 
-          <div id="whatbethere" className="container mt-2.5 lg:-mt-1.5 mb-20 sm:mb-0">
+          <div
+            id="whatbethere"
+            className="container mt-2.5 lg:-mt-1.5 mb-20 sm:mb-0"
+          >
             {/* Roadshow In */}
             <RoadshowIn></RoadshowIn>
 
@@ -77,7 +80,7 @@ export default function Home() {
           {/* Banner (Follow Up) */}
           <BnnerFollowUp
             id="AdsBnnerFlowUp"
-            title="3 Countries, 3 weeks, 1 Career Changing Event: Web3 week."
+            title="3 Countries, 3 weeks, 1 Career Changing Event: WEB3 WEEKEND."
             desc="BRINGING TOGETHER DEVELOPERS, FOUNDERS, AND COMMUNITY BUILDERS FOCUSED ON BUILDING THE FUTURE OF WEB3."
           ></BnnerFollowUp>
 
@@ -166,8 +169,8 @@ export default function Home() {
             {/* Schedule */}
             <Schedule></Schedule>
 
-            {/* Speakers and Mentors */}
-            <SpeakerMentors></SpeakerMentors>
+            {/*  Mentors & Speakers */}
+            <MentorsSpeaker></MentorsSpeaker>
 
             {/* Sponsor */}
             <Sponsor></Sponsor>
@@ -192,7 +195,7 @@ export default function Home() {
                       src="/assets/images/backdrop/backdrop-gridlines-3d.svg"
                       layout="fill"
                       objectFit="cover"
-                      priority
+                      quality="100"
                     />
                   </div>
                 </div>
@@ -206,6 +209,8 @@ export default function Home() {
                   url="https://e7bao9msf39.typeform.com/web3week"
                   label="START BUILDING NOW"
                   type="btn-outline-white"
+                  size="base"
+                  position="center"
                   center
                 ></ButtonsOpenLink>
               </div>

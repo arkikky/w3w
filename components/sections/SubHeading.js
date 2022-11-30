@@ -9,7 +9,7 @@ const SctionSubHeading = ({ className, classNameLabel, title, label }) => {
           {title}
         </h1>
         <span
-          className={`text-primary font-space-mono text-sm sm:text-xl uppercase ${addClassNameLabel}`}
+          className={`text-primary font-fira-code text-sm sm:text-xl uppercase ${addClassNameLabel}`}
         >
           {label}
         </span>

@@ -1,19 +1,28 @@
 import Link from "next/link";
 
-const ButtonsLink = ({
-  label,
-  url,
-  className,
-  type,
-  center,
-  left,
-  right,
-  blank,
-}) => {
+const ButtonsLink = ({ label, url, className, type, size, position }) => {
   const addClassName = className ? className : "";
 
-  const btnPrimary = "btn-primary";
-  const btnOtlneWhite = "btn-outline-white bg-white/40 text-white";
+const addSize =
+  size === "base"
+    ? "btn-sm sm:btn-base"
+    : size === "sm"
+    ? "btn-xs sm:btn-sm"
+    : size
+    ? size
+    : "";
+
+const btnPrimary = "btn-primary";
+const btnOtlneWhite = "btn-outline-white bg-white/40 text-white";
+
+const addPosition =
+  position === "center"
+    ? "mx-auto"
+    : position === "left"
+    ? "mr-auto"
+    : position === "right"
+    ? "ml-auto"
+    : "";
 
   return (
     <>
@@ -36,9 +45,7 @@ const ButtonsLink = ({
             : type === "btn-outline-white"
             ? btnOtlneWhite
             : ""
-        } btn-sm sm:btn-base btn-square outline-none uppercase ${
-          center ? "mx-auto" : left ? "mr-auto" : right ? "ml-auto" : ""
-        } ${addClassName}`}
+        } ${addSize} btn-square outline-none uppercase ${addPosition} ${addClassName}`}
         href={url}
       >
         {label}

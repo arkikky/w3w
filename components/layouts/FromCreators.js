@@ -22,7 +22,7 @@ const FromCreators = () => {
           </div>
         </div>
         <div className="col-span-full xl:col-span-2 mt-2 xl:mt-0">
-          <p className="text-gray-500 font-space-mono text-sm lg:text-base font-normal leading-7 lg:leading-8 uppercase">
+          <p className="text-gray-500 font-fira-code text-sm lg:text-base font-normal leading-7 lg:leading-8 uppercase">
             Organised by{" "}
             <span className="text-primary">Indonesia Crypto Network</span>, is
             the largest cross channel web3 media group and agency in Indonesia

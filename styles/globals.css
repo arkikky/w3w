@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 /* Tailwind CSS */
 @tailwind base;
@@ -8,7 +9,7 @@
 /* Init */
 body {
   @apply bg-black-100;
-  @apply text-white font-space-mono text-base font-medium;
+  @apply text-white font-fira-code text-base font-medium;
 }
 
 body::-webkit-scrollbar {
@@ -127,7 +128,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar .nav.menu .menu-item a {
-  @apply text-white hocus:text-primary font-space-mono text-2xl sm:text-3xl lg:text-sm font-normal;
+  @apply text-white hocus:text-primary font-fira-code text-2xl sm:text-3xl lg:text-sm font-normal;
   @apply outline-none;
   @apply py-3 px-0;
   @apply transition duration-300 ease-in-out;

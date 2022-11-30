@@ -116,7 +116,7 @@ export default function Navbar() {
                   <Link
                     className="menu-link uppercase outline-none"
                     activeClass="active"
-                    to="speakersMentors"
+                    to="mentorsSpeakers"
                     spy={true}
                     smooth={true}
                     hashSpy={true}
@@ -124,7 +124,7 @@ export default function Navbar() {
                     duration={400}
                     isDynamic={true}
                   >
-                    Speakers
+                    Mentors
                   </Link>
                 </li>
                 <li className="menu-item">
@@ -147,9 +147,9 @@ export default function Navbar() {
                 <ButtonsOpenLink
                   className="text-xs lg:text-sm py-2 sm:py-3 lg:py-3 px-3 sm:px-6 lg:px-6"
                   url="https://e7bao9msf39.typeform.com/web3week"
-                  label="TALK WITH US"
+                  label="Become a Sponsor"
                   type="btn-primary"
-                  center
+                  position="center"
                 ></ButtonsOpenLink>
                 <button
                   className={`navbar-toggle flex lg:hidden outline-none ml-3`}

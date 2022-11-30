@@ -28,7 +28,7 @@ export default function Header() {
                 url="https://e7bao9msf39.typeform.com/web3week"
                 label="Start building now"
                 type="btn-primary"
-                left
+                position="left"
               ></ButtonsLink>
             </div>
             <div className="mt-11">

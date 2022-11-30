@@ -12,11 +12,11 @@ export default function Footer() {
               height={32}
               width={102}
             />
-            <p className="label text-white font-space-mono text-sm font-normal text-left lg:text-center uppercase mt-4 lg:mt-0 w-full lg:max-w-[533px] 2xl:max-w-max">
+            <p className="label text-white font-fira-code text-sm font-normal text-left lg:text-center uppercase mt-4 lg:mt-0 w-full lg:max-w-[533px] 2xl:max-w-max">
               All rights reserved. WEB3 weekend is organized by Coinvestasi, a
               subsidiary of Indonesia Crypto Network.
             </p>
-            <span className="text-white font-space-mono text-sm font-normal mt-4 lg:mt-0">
+            <span className="text-white font-fira-code text-sm font-normal mt-4 lg:mt-0">
               ©2023
             </span>
           </div>

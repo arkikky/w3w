@@ -15,7 +15,7 @@ const RoashowIn = () => {
                 <h2 className="text-white font-w3w-bold text-2xl uppercase">
                   SINGLE PASS
                 </h2>
-                <p className="text-white font-mono text-base uppercase">
+                <p className="text-white font-fira-code text-base uppercase">
                   Suitable for 1 person
                 </p>
               </div>
@@ -24,7 +24,7 @@ const RoashowIn = () => {
                   $10
                 </h1>
               </div>
-              {/* <div className="columns-1 xl:columns-3 bg-white/20 border border-solid border-white text-white font-mono text-base text-left xl:text-center uppercase relative mt-2 lg:mt-1 py-4 px-4">
+              {/* <div className="columns-1 xl:columns-3 bg-white/20 border border-solid border-white text-white font-fira-code text-base text-left xl:text-center uppercase relative mt-2 lg:mt-1 py-4 px-4">
                 <p>IDR 50.000</p>
                 <p>Baht 50.000</p>
                 <p>Dong 50.000</p>
@@ -46,10 +46,12 @@ const RoashowIn = () => {
               </div>
             </div>
             <ButtonsLink
-              className="btn-block"
+              className="btn-block font-normal"
               url=""
-              label="Buy now"
+              label="GET ON THE LIST"
               type="btn-outline-white"
+              size="base"
+              position="center"
               center
             ></ButtonsLink>
 
@@ -64,7 +66,7 @@ const RoashowIn = () => {
                 <h2 className="text-white font-w3w-bold text-2xl uppercase">
                   SINGLE PASS
                 </h2>
-                <p className="text-white font-mono text-base uppercase">
+                <p className="text-white font-fira-code text-base uppercase">
                   Suitable for 1 person
                 </p>
               </div>
@@ -90,11 +92,12 @@ const RoashowIn = () => {
               </div>
             </div>
             <ButtonsLink
-              className="btn-block"
+              className="btn-block font-normal"
               url=""
-              label="Buy now"
+              label="GET ON THE LIST"
               type="btn-outline-white"
-              center
+              size="base"
+              position="center"
             ></ButtonsLink>
 
             <div className={Ticket.bxTicketItmL}></div>

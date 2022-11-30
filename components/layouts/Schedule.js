@@ -35,7 +35,7 @@ const Schedule = () => {
                 <h3 className="text-white font-SportingGrotesque-Bold text-base uppercase">
                   2 February
                 </h3>
-                <span className="text-gray-700 font-space-mono text-sm uppercase mt-1">
+                <span className="text-gray-700 font-fira-code text-sm uppercase mt-1">
                   Test
                 </span>
               </div>
@@ -52,7 +52,7 @@ const Schedule = () => {
                 <h3 className="text-white font-SportingGrotesque-Bold text-base uppercase">
                   8 February
                 </h3>
-                <span className="text-gray-700 font-space-mono text-sm uppercase mt-1">
+                <span className="text-gray-700 font-fira-code text-sm uppercase mt-1">
                   Test
                 </span>
               </div>
@@ -69,7 +69,7 @@ const Schedule = () => {
                 <h3 className="text-white font-SportingGrotesque-Bold text-base uppercase">
                   8 February
                 </h3>
-                <span className="text-gray-700 font-space-mono text-sm uppercase mt-1">
+                <span className="text-gray-700 font-fira-code text-sm uppercase mt-1">
                   Test
                 </span>
               </div>
@@ -86,7 +86,7 @@ const Schedule = () => {
                 <h3 className="text-white font-SportingGrotesque-Bold text-base uppercase">
                   8 February
                 </h3>
-                <span className="text-gray-700 font-space-mono text-sm uppercase mt-1">
+                <span className="text-gray-700 font-fira-code text-sm uppercase mt-1">
                   Test
                 </span>
               </div>
@@ -103,7 +103,7 @@ const Schedule = () => {
                 <h3 className="text-white font-SportingGrotesque-Bold text-base uppercase">
                   8 February
                 </h3>
-                <span className="text-gray-700 font-space-mono text-sm uppercase mt-1">
+                <span className="text-gray-700 font-fira-code text-sm uppercase mt-1">
                   Test
                 </span>
               </div>
@@ -120,7 +120,7 @@ const Schedule = () => {
                 <h3 className="text-white font-SportingGrotesque-Bold text-base uppercase">
                   8 February
                 </h3>
-                <span className="text-gray-700 font-space-mono text-sm uppercase mt-1">
+                <span className="text-gray-700 font-fira-code text-sm uppercase mt-1">
                   Test
                 </span>
               </div>
@@ -137,7 +137,7 @@ const Schedule = () => {
                 <h3 className="text-white font-SportingGrotesque-Bold text-base uppercase">
                   8 February
                 </h3>
-                <span className="text-gray-700 font-space-mono text-sm uppercase mt-1">
+                <span className="text-gray-700 font-fira-code text-sm uppercase mt-1">
                   Test
                 </span>
               </div>
@@ -154,7 +154,7 @@ const Schedule = () => {
                 <h3 className="text-white font-SportingGrotesque-Bold text-base uppercase">
                   8 February
                 </h3>
-                <span className="text-gray-700 font-space-mono text-sm uppercase mt-1">
+                <span className="text-gray-700 font-fira-code text-sm uppercase mt-1">
                   Test
                 </span>
               </div>
@@ -171,7 +171,7 @@ const Schedule = () => {
                 <h3 className="text-white font-SportingGrotesque-Bold text-base uppercase">
                   8 February
                 </h3>
-                <span className="text-gray-700 font-space-mono text-sm uppercase mt-1">
+                <span className="text-gray-700 font-fira-code text-sm uppercase mt-1">
                   Test
                 </span>
               </div>

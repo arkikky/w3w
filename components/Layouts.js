@@ -32,7 +32,7 @@ export default function Layouts({ children }) {
             <section
               className={
                 Card.stckyTxtline +
-                " flex flex-row gap-x-4 sm:gap-x-6 font-space-mono uppercase"
+                " flex flex-row gap-x-4 sm:gap-x-6 font-fira-code uppercase"
               }
             >
               <ul className={Card.stckyTxtlineGroup + " whitespace-nowrap"}>

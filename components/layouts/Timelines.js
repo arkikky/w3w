@@ -14,6 +14,7 @@ const Timelines = () => {
                 alt="W3W (Timelines)"
                 src="/assets/images/timelines/rapid-showcases.svg"
                 layout="responsive"
+                quality="100"
                 height="100%"
                 width="100%"
               />

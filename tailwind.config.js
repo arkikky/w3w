@@ -34,7 +34,7 @@ module.exports = {
       fontFamily: {
         "w3w-bold": ["W3W Bold", "sans-serif"],
         "w3w-regular": ["W3W Regular", "sans-serif"],
-        "space-mono": ["Space Mono", "sans-serif"],
+        "fira-code": ["Fira Code", "sans-serif"],
       },
       letterSpacing: {
         tight: "-0.03em",
@@ -143,7 +143,7 @@ module.exports = {
           alignItems: "center",
           justifyContent: "center",
           borderRadius: "4px",
-          fontFamily: theme("fontFamily.space-mono"),
+          fontFamily: theme("fontFamily.fira-code"),
           fontSize: theme("fontSize.sm"),
           fontWeight: theme("fontWeight.bold"),
           outline: "none",

@@ -138,9 +138,16 @@
   @apply absolute inset-y-0 inset-x-0 z-[5];
 }
 
-.bxRdshowIn img {
+.bxRdshowIn span {
+  @apply h-full w-full;
+}
+
+.bxRdshowIn span img {
   @apply grayscale;
   @apply object-right-top lg:object-center;
+
+  transform: scale(1.5) translateX(54px) translateY(10px);
+  @apply transform scale-[1.5] lg:scale-100 translate-x-[85px] sm:translate-x-[167px] lg:translate-x-0 -translate-y-[6px] sm:-translate-y-[34px] lg:translate-y-0;
 }
 
 .bxRdshowInContent {

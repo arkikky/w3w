@@ -11,27 +11,27 @@ const BoxRoadshow = ({ images, title, location, place, date }) => {
           Card.bxRdshowIn + " relative transition duration-300 ease-in-out"
         }
       >
-        <div className="relative h-full w-full">
-        <Image
-          alt="W3W (Roadshow In)"
-          src={images}
-          layout="fill"
-          objectFit="cover"
-          priority
-        />
+        <div className="block relative h-full w-full">
+          <Image
+            alt="W3W (Roadshow In)"
+            src={images}
+            layout="fill"
+            objectFit="cover"
+            quality="100"
+          />
         </div>
         <div className={Card.bxRdshowInContent}>
           <div className="text-left lg:text-center">
             <h2 className="text-white font-w3w-bold text-lg sm:text-2xl xl:text-[32px] xl:leading-10 uppercase px-0 lg:px-6">
               {title}
             </h2>
-            <span className="text-white/70 font-mono text-base font-medium uppercase">
+            <span className="text-white/70 font-fira-code text-base font-medium uppercase">
               {location}
             </span>
           </div>
         </div>
-        <div className={Card.bxRdshowInContentLbel}>
-          <div className="inline-flex flex-row items-center text-white font-mono text-sm font-normal uppercase">
+        {/* <div className={Card.bxRdshowInContentLbel}>
+          <div className="inline-flex flex-row items-center text-white font-fira-code text-sm font-normal uppercase">
             <svg
               className="fill-current mr-1 h-5 w-5"
               viewBox="0 0 24 24"
@@ -46,7 +46,7 @@ const BoxRoadshow = ({ images, title, location, place, date }) => {
             </svg>
             {place}
           </div>
-          <div className="inline-flex flex-row items-center text-white font-mono text-sm font-normal uppercase">
+          <div className="inline-flex flex-row items-center text-white font-fira-code text-sm font-normal uppercase">
             <svg
               className="fill-current mr-1 h-5 w-5"
               viewBox="0 0 25 24"
@@ -61,7 +61,7 @@ const BoxRoadshow = ({ images, title, location, place, date }) => {
             </svg>
             {date}
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   );
