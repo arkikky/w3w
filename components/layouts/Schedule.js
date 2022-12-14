@@ -4,7 +4,7 @@ import Link from "next/link";
 import Card from "../../styles/components/Card.module.css";
 
 // Sections
-import SubHeading from "../sections/SubHeading";
+import SbHeading from "../sections/sub-heading/SubHeading";
 
 const Schedule = () => {
   return (
@@ -13,16 +13,16 @@ const Schedule = () => {
         id="schedule"
         className="grid grid-cols-4 sm:grid-cols-4 mt-18 mb-14 sm:my-18 lg:my-24 px-0 sm:px-4"
       >
-        <SubHeading
+        <SbHeading
           className="flex flex-row items-center justify-between"
           title="Schedule"
           classNameLabel="-mt-2.5 sm:-mt-1"
           label="Coming soon!"
-        ></SubHeading>
+        ></SbHeading>
 
-        <div className="">
+        {/* <div className="">
           <Link href="/schedule">View</Link>
-        </div>
+        </div> */}
 
         <div
           className={

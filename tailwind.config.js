@@ -46,36 +46,11 @@ module.exports = {
         18: "72px",
       },
       screens: {
-        xs: "325px",
-        "1xl": "1440px",
-        "2xl": "1530px",
+        xxs: "381px",
+        xs: "419px",
         "3xl": "1908px",
         "4xl": "2110px",
         "5xl": "2526px",
-        "max-sm": {
-          max: "640px",
-        },
-        "max-md": {
-          max: "768px",
-        },
-        "max-lg": {
-          max: "1024px",
-        },
-        "max-xl": {
-          max: "1280px",
-        },
-        "max-2xl": {
-          max: "1440px",
-        },
-        "max-3xl": {
-          max: "1920px",
-        },
-        "max-4xl": {
-          max: "2560px",
-        },
-        "max-5xl": {
-          max: "3840px",
-        },
       },
       zIndex: {
         px: "1",

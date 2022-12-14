@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Ui
-import BoxBrandLogo from "../ui/brand-logo/BoxBrandLogo";
+import BxBrndLogo from "../sections/brand-logo/BoxBrandLogo";
 
 // Json
 import mockFromCreator from "../../utils/from-creator.json";
@@ -36,7 +36,7 @@ const FromCreators = () => {
               key={data.id}
               className="col-span-full sm:col-span-6 lg:col-span-4 xl:col-span-4 grayscale hover:grayscale-0 transition duration-500 ease-in-out"
             >
-              <BoxBrandLogo {...data}></BoxBrandLogo>
+              <BxBrndLogo {...data}></BxBrndLogo>
             </div>
           ))}
         </div>

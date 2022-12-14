@@ -2,13 +2,13 @@
 import Card from "../../styles/components/Card.module.css";
 
 // Sections
-import SubHeadingBtn from "../sections/SubHeadingBtn";
+import SbHeadingBtn from "../sections/sub-heading/SubHeadingBtn";
 
 const MentorsSpeakers = () => {
   return (
     <>
       <section id="mentorsSpeakers" className="spekrsjdge px-0 sm:px-4">
-        <SubHeadingBtn
+        <SbHeadingBtn
           className="flex flex-col items-center justify-center mb-11 sm:mb-0"
           title="Mentors and Speakers"
           classNameBtn="text-xs lg:text-sm mt-1.5 sm:mt-3 py-2 sm:py-3 lg:py-3 px-3 sm:px-6 lg:px-6"
@@ -16,7 +16,7 @@ const MentorsSpeakers = () => {
           label="Apply here"
           variant="btn-primary"
           position="center"
-        ></SubHeadingBtn>
+        ></SbHeadingBtn>
         <div
           className={
             Card.bxCntentShdow +

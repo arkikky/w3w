@@ -10,9 +10,14 @@
   @apply bg-primary/50 text-white;
 }
 
+html {
+  @apply h-[-webkit-fill-available];
+}
+
 body {
   @apply bg-black-100;
   @apply text-white font-fira-code text-base font-medium;
+  @apply h-screen;
 }
 
 body::-webkit-scrollbar {

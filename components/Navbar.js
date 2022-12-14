@@ -5,7 +5,7 @@ import Links from "next/link";
 import Image from "next/legacy/image";
 
 // Ui
-import ButtonsLink from "/components/ui/buttons/ButtonsLink";
+import BtnLink from "/components/ui/buttons/ButtonsLink";
 
 export default function Navbar() {
   // Toggle
@@ -76,7 +76,7 @@ export default function Navbar() {
                     activeClass="active"
                     to="header"
                     smooth={true}
-                    offset={0}
+                    offset={-149}
                     duration={400}
                   >
                     About
@@ -131,7 +131,7 @@ export default function Navbar() {
                   <Link
                     className="menu-link uppercase outline-none"
                     activeClass="active"
-                    to="mediaPartners"
+                    to="sponsor"
                     spy={true}
                     smooth={true}
                     hashSpy={true}
@@ -139,19 +139,19 @@ export default function Navbar() {
                     duration={400}
                     isDynamic={true}
                   >
-                    Media Partners
+                    Sponsor
                   </Link>
                 </li>
               </ul>
               <div className="flex flex-row items-center">
-                <ButtonsLink
+                <BtnLink
                   typeLink="link-blank"
                   className="text-xs lg:text-sm py-2 sm:py-3 lg:py-3 px-3 sm:px-6 lg:px-6"
                   url="https://e7bao9msf39.typeform.com/to/c1WBrXM7"
                   label="Become a Sponsor"
                   variant="btn-primary"
                   position="center"
-                ></ButtonsLink>
+                ></BtnLink>
                 <button
                   className={`navbar-toggle flex lg:hidden outline-none ml-3`}
                   data-toggle="#nvMnuPrimary"

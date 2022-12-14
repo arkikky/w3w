@@ -1,5 +1,5 @@
 // Ui
-import ButtonsLink from "../../components/ui/buttons/ButtonsLink";
+import ButtonsLink from "../../../components/ui/buttons/ButtonsLink";
 
 const SctionSubHeadingBtn = ({
   className,

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // Ui
-import BoxRoadshow from "../ui/card/Roadshow";
+import BxRoadshow from "../sections/card/Roadshow";
 
 // Json
 import mockRodshow from "../../utils/roadshow-in.json";
@@ -17,7 +17,7 @@ const RoashowIn = () => {
       >
         {posts.map((data) => (
           <div key={data.id} className="col-span-full lg:col-span-4">
-            <BoxRoadshow {...data}></BoxRoadshow>
+            <BxRoadshow {...data}></BxRoadshow>
           </div>
         ))}
       </div>

@@ -7,9 +7,9 @@ const Timelines = () => {
   return (
     <>
       <div className="mb-[121px]">
-        <section className="timelns grid grid-cols-4 sm:grid-cols-12 relative px-4">
+        <section className="timelns grid grid-cols-4 sm:grid-cols-12 relative px-0 sm:px-4">
           <div className="col-span-full sm:col-span-6 relative">
-            <div className="relative -mx-[18px] sm:mx-0 h-[287px] lg:h-[437px] xl:h-[562.23px]">
+            <div className="relative mx-auto sm:mx-0 h-[325px] sm:h-[311px] lg:h-[437px] xl:h-[562.23px] w-full xs:w-[385px] sm:w-full">
               <Image
                 alt="W3W (Timelines)"
                 src="/assets/images/timelines/catch-project-showcases.png"
@@ -28,7 +28,7 @@ const Timelines = () => {
               />
             </div>
           </div>
-          <div className="col-span-full sm:col-span-6 flex items-center justify-center relative pl-0 sm:pl-7">
+          <div className="col-span-full sm:col-span-6 flex items-center justify-center relative px-0 sm:pl-7">
             <div
               className={
                 Timelns.timelnsCntentContnt + " " + Timelns.timelnsCntentRight
@@ -44,8 +44,8 @@ const Timelines = () => {
             </div>
           </div>
         </section>
-        <section className="timelns grid grid-cols-4 sm:grid-cols-12 relative mt-16 sm:mt-0 px-4">
-          <div className="col-span-full sm:col-span-6 flex items-center justify-center pr-0 sm:pr-7">
+        <section className="timelns grid grid-cols-4 sm:grid-cols-12 relative mt-16 sm:mt-0 px-0 sm:px-4">
+          <div className="col-span-full sm:col-span-6 flex items-center justify-center px-0 sm:pr-7">
             <div
               className={
                 Timelns.timelnsCntentContnt + " " + Timelns.timelnsCntentLeft
@@ -61,7 +61,7 @@ const Timelines = () => {
             </div>
           </div>
           <div className="col-span-full sm:col-span-6 order-first sm:order-last relative">
-            <div className="relative -mx-[18px] sm:mx-0 h-[243px] lg:h-[333px] xl:h-[463.59px]">
+            <div className="relative mx-auto sm:mx-0 h-[255px] xxs:h-[281px] sm:h-[251px] lg:h-[333px] xl:h-[463.59px] w-full xs:w-[385px] sm:w-full">
               <Image
                 alt="W3W (Timelines)"
                 src="/assets/images/timelines/solve-your-problem.png"
@@ -81,9 +81,9 @@ const Timelines = () => {
             </div>
           </div>
         </section>
-        <section className="timelns grid grid-cols-4 sm:grid-cols-12 relative mt-16 sm:mt-0 px-4">
+        <section className="timelns grid grid-cols-4 sm:grid-cols-12 relative mt-16 sm:mt-0 px-0 sm:px-4">
           <div className="col-span-full sm:col-span-6 relative">
-            <div className="relative -mx-[18px] sm:mx-0 h-[229px] lg:h-[315px] xl:h-[450.03px]">
+            <div className="relative mx-auto sm:mx-0 h-[247px] xxs:h-[267px] sm:h-[239px] lg:h-[315px] xl:h-[429.03px] w-full xs:w-[385px] sm:w-full">
               <Image
                 alt="W3W (Timelines)"
                 src="/assets/images/timelines/learn-all-about.png"
@@ -102,7 +102,7 @@ const Timelines = () => {
               />
             </div>
           </div>
-          <div className="col-span-full sm:col-span-6 timelnsCntentRight flex items-center justify-center pl-0 sm:pl-7">
+          <div className="col-span-full sm:col-span-6 timelnsCntentRight flex items-center justify-center px-0 sm:pl-7">
             <div
               className={
                 Timelns.timelnsCntentContnt + " " + Timelns.timelnsCntentRight
@@ -118,8 +118,8 @@ const Timelines = () => {
             </div>
           </div>
         </section>
-        <section className="timelns grid grid-cols-4 sm:grid-cols-12 relative mt-16 sm:mt-0 px-4">
-          <div className="col-span-full sm:col-span-6 flex items-center justify-center pr-0 sm:pr-7">
+        <section className="timelns grid grid-cols-4 sm:grid-cols-12 relative mt-16 sm:mt-0 px-0 sm:px-4">
+          <div className="col-span-full sm:col-span-6 flex items-center justify-center px-0 sm:pr-7">
             <div
               className={
                 Timelns.timelnsCntentContnt + " " + Timelns.timelnsCntentLeft
@@ -135,7 +135,7 @@ const Timelines = () => {
             </div>
           </div>
           <div className="col-span-full sm:col-span-6 timelnsImgsLeft order-first sm:order-last">
-            <div className="relative -mx-[18px] sm:mx-0 h-[287px] lg:h-[359px] xl:h-[492.57px]">
+            <div className="relative mx-auto sm:mx-0 h-[261px] xxs:h-[273px] sm:h-[263px] lg:h-[359px] xl:h-[492.57px] w-full xs:w-[385px] sm:w-full">
               <Image
                 alt="W3W (Timelines)"
                 src="/assets/images/timelines/network-and-participate.png"

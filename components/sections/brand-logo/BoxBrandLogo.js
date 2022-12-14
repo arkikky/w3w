@@ -17,7 +17,13 @@ const BoxBrandLogo = ({ url, images, label, h, w }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image src={images} alt={label} height={h} width={w} quality="70" />
+        <Image
+          src={images}
+          alt={label}
+          height={h}
+          width={w}
+          quality="70"
+        />
       </Link>
     </>
   );
