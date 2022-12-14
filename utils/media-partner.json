@@ -1,0 +1,37 @@
+[{
+    "id": 1,
+    "url": "",
+    "images": "/assets/images/media-partner/fireblocks.svg",
+    "alt": "W3W (Media Partners)"
+  },
+  {
+    "id": 2,
+    "url": "",
+    "images": "/assets/images/media-partner/near.svg",
+    "alt": "W3W (Media Partners)"
+  },
+  {
+    "id": 3,
+    "url": "",
+    "images": "/assets/images/media-partner/solana.svg",
+    "alt": "W3W (Media Partners)"
+  },
+  {
+    "id": 4,
+    "url": "",
+    "images": "/assets/images/media-partner/coindesk-indonesia.svg",
+    "alt": "W3W (Media Partners)"
+  },
+  {
+    "id": 5,
+    "url": "",
+    "images": "/assets/images/media-partner/coinvestasi.svg",
+    "alt": "W3W (Media Partners)"
+  },
+  {
+    "id": 6,
+    "url": "",
+    "images": "/assets/images/media-partner/coinvestasi.svg",
+    "alt": "W3W (Media Partners)"
+  }
+]

@@ -1,0 +1,47 @@
+/* Ticket */
+.bxTicket {
+  @apply grid gap-y-6;
+  /* @apply border-2 border-solid border-white; */
+  -webkit-box-shadow: inset 0 0 0 2.2px #FFFFFF;
+  -moz-box-shadow: inset 0 0 0 2.2px #FFFFFF;
+  -o-box-shadow: inset 0 0 0 2.2px #FFFFFF;
+  box-shadow: inset 0 0 0 2.2px #FFFFFF;
+  @apply overflow-hidden;
+  @apply relative;
+  @apply py-8 xl:py-10 px-6 xl:px-10;
+}
+
+.bxTicketItmL {
+  @apply flex;
+  @apply bg-black-100 border-2 border-solid border-white rounded-full;
+  @apply absolute top-auto -left-[33px] xl:-left-[27px] right-auto bottom-[27%] xl:bottom-[191px];
+  @apply h-[43px] xl:h-[50px] w-[50px];
+  @apply z-10;
+}
+
+.bxTicketItmR {
+  @apply flex;
+  @apply bg-black-100 border-2 border-solid border-white rounded-full;
+  @apply absolute top-auto left-auto -right-[33px] xl:-right-[27px] bottom-[27%] xl:bottom-[191px];
+  @apply h-[43px] xl:h-[50px] w-[50px];
+  @apply z-10;
+}
+
+/* Ticket (Box Card) */
+.bxTicketBx {
+  @apply bg-white/20;
+  @apply border border-solid border-white;
+  @apply relative;
+  @apply py-4 px-4;
+}
+
+/* Ticket (Content List) */
+.bxTicketList {
+  @apply inline-flex flex-col;
+  @apply text-white font-fira-code text-sm sm:text-base font-normal uppercase;
+  @apply pl-0 mx-0;
+}
+
+.bxTicketList li {
+  @apply mb-2 last:mb-0;
+}

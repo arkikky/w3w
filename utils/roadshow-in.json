@@ -1,0 +1,25 @@
+[{
+    "id": 1,
+    "images": "/assets/images/roadshow-in/jakarta.jpg",
+    "title": "Jakarta",
+    "location": "Indonesia",
+    "place": "Halff Patiunus",
+    "date": "10 - 11 Mar"
+  },
+  {
+    "id": 2,
+    "images": "/assets/images/roadshow-in/bangkok.jpg",
+    "title": "Bangkok",
+    "location": "Thailand",
+    "place": "Summer House",
+    "date": "17 - 18 Mar"
+  },
+  {
+    "id": 3,
+    "images": "/assets/images/roadshow-in/ho-chi-minh-city.jpg",
+    "title": "Ho Chi Minh City",
+    "location": "Vietnam",
+    "place": "Trendora Cafe",
+    "date": "24 - 25 Mar"
+  }
+]
