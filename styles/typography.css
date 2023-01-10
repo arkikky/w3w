@@ -1,0 +1,8 @@
+.text-otlne {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.text-otlne-white {
+  -webkit-text-stroke-color: #FFFFFF;
+}
