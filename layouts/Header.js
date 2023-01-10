@@ -18,11 +18,11 @@ export default function Header() {
               <h1 className="text-white font-w3w-bold text-[32px] sm:text-[66px] 2xl:text-[88px] leading-[44px] sm:leading-[89px] 2xl:leading-[111px] tracking-[2px] lg:tracking-[4px]">
                 HACK YOUR WAY INTO WEB3
               </h1>
-              <p className="text-white/70 font-mono text-sm sm:text-lg lg:text-xl font-normal mt-2 w-full max-w-[289px] sm:max-w-[371px] xl:max-w-[527px] 2xl:max-w-[561px]">
-                PARTICIPATE IN BUILDING THE FUTURE OF WEB3 FOR 3 WEEKS IN 3
-                CITIES; <span className="text-primary">INDONESIA</span>,{" "}
-                <span className="text-primary">THAILAND</span>,{" "}
-                <span className="text-primary">VIETNAM</span>
+              <p className="text-white/70 font-mono text-sm sm:text-lg lg:text-xl font-normal uppercase mt-2 w-full max-w-[289px] sm:max-w-[371px] xl:max-w-[527px] 2xl:max-w-[561px]">
+                Participate in building the future of Web3 in 1 week at 3
+                cities; <span className="text-primary">Bali</span>,{" "}
+                <span className="text-primary">Yogyakarta</span>,{" "}
+                <span className="text-primary">Jakarta</span>
               </p>
               <div className="mr-auto w-max">
                 <Buttons

@@ -59,7 +59,7 @@ export default function Home() {
         <Banner
           id="bnnerDesc"
           title="3 Cities, 3 weeks, 1 Career Changing Event: WEB3 WEEKEND."
-          description="BRINGING TOGETHER DEVELOPERS, FOUNDERS, AND COMMUNITY BUILDERS FOCUSED ON BUILDING THE FUTURE OF WEB3."
+          description="BRINGING TOGETHER DEVELOPERS, FOUNDERS, STUDENTS, AND COMMUNITY BUILDERS FOCUSED ON BUILDING THE FUTURE OF WEB3."
         />
 
         {/* Banner (Marquee) */}

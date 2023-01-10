@@ -57,12 +57,12 @@ const Navbar = () => {
               <div className="block relative h-7 lg:h-8 w-[94px] lg:w-[105px]">
                 <Image
                   alt={`${process.env.NEXT_PUBLIC_APP_NAME} (LOGO)`}
-                  src={`${process.env.NEXT_PUBLIC_APP_LOGO}`}
+                  src="/assets/images/w3w.svg"
                   layout={"fill"}
                   objectFit={"cover"}
                   objectPosition={"center"}
                   placeholder="blur"
-                  blurDataURL={`${process.env.NEXT_PUBLIC_APP_LOGO}`}
+                  blurDataURL="/assets/images/w3w.svg"
                   priority
                 />
               </div>
