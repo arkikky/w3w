@@ -57,7 +57,7 @@ const Navbar = () => {
               <div className="block relative h-7 lg:h-8 w-[94px] lg:w-[105px]">
                 <Image
                   alt={`${process.env.NEXT_PUBLIC_APP_NAME} (LOGO)`}
-                  src={"/assets/images/w3w.svg"}
+                  src={`${process.env.NEXT_PUBLIC_APP_LOGO}`}
                   layout="fill"
                   objectFit="cover"
                   priority
