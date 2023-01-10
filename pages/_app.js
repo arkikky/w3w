@@ -1,40 +1,22 @@
-import dynamic from "next/dynamic";
 import Head from "next/head";
-import Script from "next/script";
 
-// Css - Global
-import "@styles/globals.css";
+import "../styles/global.css";
+import "../styles/typography.css";
 
-// Layouts - Components
-const Layouts = dynamic(() => import("@layouts/Layouts"));
+// Components
+import "../styles/components/navbar.css";
+import "../styles/components/backdrop.css";
+import "../styles/components/card.css";
+import "../styles/components/box.css";
 
-const MyApp = ({ Component, pageProps }) => {
-  if (Component.getLayout) {
-    return Component.getLayout(
-      <>
-        <Component {...pageProps} />
-
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-58JQQHK');
-      `}
-        </Script>
-      </>
-    );
-  }
-
+function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* Head (Default - Init) */}
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -47,32 +29,35 @@ const MyApp = ({ Component, pageProps }) => {
           name="keywords"
           content="web3, web3 news, web3 technology, crypto, crypto market, cryptonomics, blockchain, what is blockchain, blockchain technology, blockchain explained, blockchain news, metaverse, metaverse explained, metaverse expansion, metaverse news, nft, nft explained, nft meaning, nft art, nft crypto, nft crypto, how to sell nft art, nft exhibition"
         />
-        <meta
-          name="author"
-          content={`${process.env.NEXT_PUBLIC_SITE_AUTHOR}`}
-        />
+        <meta name="author" content="W3W | Web 3 Week" />
         <meta name="theme-color" content="#12E582" />
         <meta name="msapplication-navbutton-color" content="#12E582" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="#12E582" />
+
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
-      {/* Main (App) */}
-      <Layouts>
-        <Component {...pageProps} />
-
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-58JQQHK');
-      `}
-        </Script>
-      </Layouts>
+      <Component {...pageProps} />
     </>
   );
-};
+}
 
 export default MyApp;

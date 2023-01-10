@@ -1,0 +1,138 @@
+/* Backdrop Gridlines */
+.backdrp-grdlne {
+  @apply absolute inset-y-0 inset-x-4 sm:inset-x-0;
+  @apply -z-px;
+}
+
+.backdrp-grdlne-itms {
+  @apply relative;
+  @apply h-full; 
+}
+
+.backdrp-grdlne-itms::before {
+  @apply content-[""];
+  @apply flex;
+  background: linear-gradient(180deg, #272727, #272727 50%, transparent 0, transparent);
+  background-size: 20px 40px;
+  @apply absolute inset-y-0 left-0 right-auto;
+  @apply w-px h-full;
+  @apply z-10;
+}
+
+.backdrp-grdlne-itms:first-child::before {
+  background: none;
+  @apply border-l border-solid border-black-50;
+}
+
+.backdrp-grdlne-itms:last-child::after {
+  @apply content-[""];
+  @apply border-r border-solid border-black-50;
+  @apply absolute inset-y-0 left-auto right-0;
+  @apply w-px h-full;
+  @apply z-10;
+}
+
+.backdrp-grdlne-itms.last-mble::after {
+  @apply content-[""];
+  @apply flex sm:hidden;
+  @apply border-r border-solid border-black-50;
+  @apply absolute inset-y-0 left-auto right-0;
+  @apply w-px h-full;
+  @apply z-10;
+}
+
+/* Backdrop Beams */
+.backdrp-beams {
+  @apply absolute;
+}
+
+.backdrp-beams.lft {
+  @apply top-[204px] -left-[108px] right-auto bottom-auto;
+  @apply w-[292px] h-[367px];
+}
+
+.backdrp-beams.lft img {
+  @apply transform scale-[1.6];
+}
+
+.backdrp-beams.rght {
+  @apply -top-[182px] sm:-top-28 left-auto -right-14 sm:-right-1 bottom-auto;
+  @apply w-[386px] h-[489px];
+}
+
+.backdrp-beams.rght img {
+  @apply transform scale-150 sm:scale-[1.8];
+}
+
+/* Bnner */
+.bnner {
+  background-image: url("/assets/images/wp-banner-backdrop.webp");
+  @apply bg-no-repeat bg-cover object-cover;
+}
+
+.bnner-wide-content {
+  @apply px-4 sm:px-11 lg:px-0;
+  @apply max-w-full lg:max-w-[796px] xl:max-w-[1014px];
+}
+
+.bnner-wide-content .title {
+  @apply text-xl sm:text-3xl lg:text-[40px] lg:leading-tight; 
+}
+
+.bnner-in {
+  background-image: url("/assets/images/backdrop/backdrop-banner.jpg");
+  @apply bg-no-repeat bg-cover object-cover;
+  @apply py-12 sm:py-14 lg:py-[77px] px-4 sm:px-14 lg:px-[94px];
+}
+
+.bnner-in::before {
+  @apply content-[""];
+  background-image: url("/assets/images/backdrop/backdrop-ornaments-left.webp");
+  @apply bg-no-repeat bg-cover object-cover;
+  @apply absolute -top-[17px] sm:-top-[29px] lg:-top-[41px] -left-[17px] sm:-left-[29px] lg:-left-[41px] right-auto bottom-auto;
+  @apply w-[35px] sm:w-14 lg:w-[65px] h-[35px] sm:h-14 lg:h-[65px];
+}
+
+.bnner-in::after {
+  @apply content-[""];
+  background-image: url("/assets/images/backdrop/backdrop-ornaments-right.webp");
+  @apply bg-no-repeat bg-cover object-cover;
+  @apply absolute top-auto left-auto -right-[25px] sm:-right-[54px] lg:-right-[68px] -bottom-[27px] sm:-bottom-[59px] lg:-bottom-[68px];
+  @apply w-[53px] sm:w-[113px] lg:w-[136px] h-[55px] sm:h-[119px] lg:h-[136px];
+}
+
+/* Banner Marque */
+@-webkit-keyframes marqueLeft {
+  0% {
+    transform: translateX(0%);
+  } 100% {
+    transform: translateX(-65%);
+  }
+}
+
+@-moz-keyframes marqueLeft {
+  0% {
+    transform: translateX(0%);
+  } 100% {
+    transform: translateX(-65%);
+  }
+}
+
+@keyframes marqueLeft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-65%);
+  }
+}
+
+.bnner-marque {
+  background-image: url("/assets/images/backdrop/backdrop-banner.jpg");
+  @apply bg-no-repeat bg-cover object-cover;
+}
+
+.bnner-marque-content {
+  animation: marqueLeft 12s linear infinite running;
+}

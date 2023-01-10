@@ -1,0 +1,11 @@
+.cntent-shdow {
+  @apply relative;
+}
+
+.cntent-shdow.on::after {
+  @apply content-[""];
+  @apply bg-shadow-black;
+
+  @apply absolute -inset-y-2 -inset-x-2;
+  @apply z-10;
+}
