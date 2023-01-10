@@ -25,7 +25,7 @@ const ImagesFill = ({ className, src, alt, priority = false }) => {
             objectPosition={"center"}
             placeholder="blur"
             blurDataURL={addImags}
-            sizes="40vw"
+            sizes="80vw"
           />
         </div>
       )}
@@ -39,7 +39,7 @@ const ImagesFill = ({ className, src, alt, priority = false }) => {
             layout={"fill"}
             objectFit={"cover"}
             objectPosition={"center"}
-            sizes="40vw"
+            sizes="80vw"
             priority
           />
         </div>
