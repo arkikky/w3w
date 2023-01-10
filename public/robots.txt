@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://web3weekend.asia/
+
+# Sitemaps
+Sitemap: https://web3weekend.asia/sitemap.xml
