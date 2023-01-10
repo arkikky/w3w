@@ -59,7 +59,7 @@ const Layouts = ({ children }) => {
         </Container>
 
         {/* Sticky Textline */}
-        <div className="fixed inset-y-0 inset-x-0 select-none z-[60]">
+        <div className="fixed inset-y-0 inset-x-0 select-none pointer-events-none z-[60]">
           <Container className="absolute inset-y-0 inset-x-0 h-full min-h-screen">
             <section
               className={`${Card.stckyTxtline} flex flex-row gap-x-4 sm:gap-x-6 font-fira-code uppercase`}
