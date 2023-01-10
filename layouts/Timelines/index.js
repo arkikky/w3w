@@ -17,7 +17,6 @@ const Timelines = () => {
               className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
               src={"/assets/images/timelines/catch-project-showcases.png"}
               alt="W3W (Timelines)"
-              priority={true}
             />
 
             {/* Backdrop (Stairs) */}
@@ -60,7 +59,6 @@ const Timelines = () => {
               className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
               src={"/assets/images/timelines/solve-your-problem.png"}
               alt="W3W (Timelines)"
-              priority={true}
             />
 
             {/* Backdrop (Stairs) */}
@@ -79,7 +77,6 @@ const Timelines = () => {
               className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
               src={"/assets/images/timelines/learn-all-about.png"}
               alt="W3W (Timelines)"
-              priority={true}
             />
 
             {/* Backdrop (Stairs) */}
@@ -122,7 +119,6 @@ const Timelines = () => {
               className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
               src={"/assets/images/timelines/network-and-participate.png"}
               alt="W3W (Timelines)"
-              priority={true}
             />
           </div>
         </section>
