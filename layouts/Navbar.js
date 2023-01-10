@@ -60,6 +60,7 @@ const Navbar = () => {
                   src={"/assets/images/w3w.svg"}
                   layout="fill"
                   objectFit="cover"
+                  priority
                 />
               </div>
             </PostLink>
