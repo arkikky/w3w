@@ -1,4 +1,3 @@
-@@ -1,51 +1 @@
 [![DeepSource](https://deepsource.io/gh/arkikky/w3w.svg/?label=active+issues&show_trend=true&token=5KfluZKn5-RemlYeSNpXZYQW)](https://deepsource.io/gh/arkikky/w3w/?ref=repository-badge) [![DeepSource](https://deepsource.io/gh/arkikky/w3w.svg/?label=resolved+issues&show_trend=true&token=5KfluZKn5-RemlYeSNpXZYQW)](https://deepsource.io/gh/arkikky/w3w/?ref=repository-badge)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/46648482-644c-4c80-bafb-872057e51b6b/deploy-status)](https://app.netlify.com/sites/next-dev-starter/deploys)
