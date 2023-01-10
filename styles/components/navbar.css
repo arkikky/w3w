@@ -1,0 +1,127 @@
+.navbar {
+  @apply bg-transparent;
+  @apply h-20 sm:h-[104px];
+
+  @apply transition-colors duration-500 ease-in-out;
+  @apply transition ease-in-out;
+}
+
+.navbar.active {
+  @apply bg-[#2A2A2A];
+  box-shadow: 0px 4px 33px rgba(45, 62, 94, 0.09);
+}
+
+.navbar .nav.menu .menu-item {
+  @apply flex flex-col sm:flex-row relative xl:static;
+  @apply mr-0 lg:mr-2 xl:mr-8 2xl:mr-10 last:mr-0 mb-2 sm:mb-3 lg:mb-0 last:mb-0;
+
+  @apply transition duration-300 ease-in-out;
+}
+
+.navbar .nav.menu .menu-item a {
+  @apply text-white font-space-mono text-2xl sm:text-3xl lg:text-sm font-normal;
+  @apply py-3 px-3;
+}
+
+.navbar .nav.menu .menu-item a.active {
+  @apply text-primary;
+}
+
+/* Nav */
+.nav {
+  height: 60px;
+  position: relative;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+.nav>.nav-links>a {
+  @apply text-white font-space-mono text-base font-normal;
+}
+
+.nav>.nav-links>a>button {
+  height: 60px;
+}
+
+@media (max-width:968px) {
+  .nav {
+    width: 75vw;
+
+  }
+
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+  }
+
+  #nav-check:checked~.nav-btn>label span {
+    position: absolute;
+  }
+
+  #nav-check:checked~.nav-btn>label span:first-child {
+    transform: rotate(45deg);
+    transform-origin: center;
+  }
+
+  #nav-check:checked~.nav-btn>label span:nth-child(2) {
+    display: none;
+  }
+
+  #nav-check:checked~.nav-btn>label span:nth-child(3) {
+    transform-origin: center;
+    transform: rotate(-45deg);
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 1px;
+    margin: 3px 0;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: fixed;
+    display: block;
+    @apply bg-[#2A2A2A];
+    height: 0px;
+    transition: height 0.2s ease-out;
+    overflow-y: hidden;
+    top: 80px;
+    left: 0;
+    width: 100%;
+  }
+
+  .nav>.nav-links>a>button {
+    display: block;
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+}
