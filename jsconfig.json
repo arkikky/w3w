@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@controller/*": ["controller/*"],
+      "@json/*": ["json/*"],
+      "@styles/*": ["styles/*"],
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"]
+    }
+  }
+}
