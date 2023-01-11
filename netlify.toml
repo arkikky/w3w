@@ -3,7 +3,6 @@
   publish = ".next"
 
 [[plugins]]
-  package = "netlify-plugin-debug-cache"
   package = "netlify-plugin-submit-sitemap"
 
     [plugins.inputs]
