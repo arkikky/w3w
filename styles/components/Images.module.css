@@ -1,0 +1,9 @@
+.imgsFill span {
+  @apply !relative;
+  @apply !h-full !w-full;
+}
+
+.imgsFill span img {
+  @apply !static;
+  @apply !h-full !w-full;
+} 
