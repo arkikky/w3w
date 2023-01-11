@@ -1,0 +1,20 @@
+/* Box */
+.bx {
+  @apply relative;
+  @apply h-[172px];
+  @apply min-h-[172px];
+  @apply max-h-[172px];
+}
+
+.bxRounded {
+  @apply rounded-full;
+}
+
+.bxRoundedIcons {
+  @apply h-[120px];
+  @apply min-h-[120px];
+  @apply max-h-[120px];
+  @apply w-[120px];
+  @apply min-w-[120px];
+  @apply max-w-[120px];
+}
