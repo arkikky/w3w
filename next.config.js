@@ -3,7 +3,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  trailingSlash: true,
   images: {
     domains: ["https://w3w.netlify.app/"],
     deviceSizes: [2048],
