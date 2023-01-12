@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
+import { Link } from "react-scroll";
 import getConfig from "next/config";
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import Image from "next/image";
 
 // # Get .config
@@ -30,17 +30,17 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    // var Scroll = require("react-scroll");
-    // var Events = Scroll.Events;
-    // const nvBtnToggle = document.querySelector(".navbar-toggle");
-    // const nvMnu = document.querySelector(".navbar-nav");
-    // Events.scrollEvent.register("end", (to, element) => {
-    //   if (nvMnu.classList.contains("on") == true) {
-    //     setTimeout(() => {
-    //       nvBtnToggle.click();
-    //     }, 200);
-    //   }
-    // });
+    var Scroll = require("react-scroll");
+    var Events = Scroll.Events;
+    const nvBtnToggle = document.querySelector(".navbar-toggle");
+    const nvMnu = document.querySelector(".navbar-nav");
+    Events.scrollEvent.register("end", (to, element) => {
+      if (nvMnu.classList.contains("on") == true) {
+        setTimeout(() => {
+          nvBtnToggle.click();
+        }, 200);
+      }
+    });
   }, []);
 
   return (
@@ -74,9 +74,11 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
-                    href={""}
-                    prefetch={false}
-                    passHref
+                    activeClass="active"
+                    to="about"
+                    smooth={"easeInOutQuart"}
+                    offset={-149}
+                    duration={300}
                   >
                     About
                   </Link>
@@ -84,9 +86,13 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
-                    href={""}
-                    prefetch={false}
-                    passHref
+                    activeClass="active"
+                    to="whatbethere"
+                    spy={true}
+                    hashSpy={true}
+                    smooth={"easeInOutQuart"}
+                    offset={-135}
+                    duration={300}
                   >
                     What’ll be there
                   </Link>
@@ -94,9 +100,13 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
-                    href={""}
-                    prefetch={false}
-                    passHref
+                    activeClass="active"
+                    to="schedule"
+                    spy={true}
+                    hashSpy={true}
+                    smooth={"easeInOutQuart"}
+                    offset={-135}
+                    duration={300}
                   >
                     Schedules
                   </Link>
@@ -104,9 +114,13 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
-                    href={""}
-                    prefetch={false}
-                    passHref
+                    activeClass="active"
+                    to="mentorsSpeakers"
+                    spy={true}
+                    hashSpy={true}
+                    smooth={"easeInOutQuart"}
+                    offset={-135}
+                    duration={300}
                   >
                     Mentors
                   </Link>
@@ -114,9 +128,13 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
-                    href={""}
-                    prefetch={false}
-                    passHref
+                    activeClass="active"
+                    to="sponsor"
+                    spy={true}
+                    hashSpy={true}
+                    smooth={"easeInOutQuart"}
+                    offset={-135}
+                    duration={300}
                   >
                     Sponsor
                   </Link>

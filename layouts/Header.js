@@ -15,7 +15,7 @@ const ImagesFill = dynamic(() => import("@components/UI/ImagesFill"));
 export default function Header() {
   return (
     <>
-      <header id="about" className={`${Headr.header}`}>
+      <header id="about" name="about" className={`${Headr.header}`}>
         <Container className="mt-[125px] sm:mt-[149px] mb-28 px-4">
           <section className="relative">
             <div className="flex flex-col w-full max-w-[597px] xl:max-w-[661px] 2xl:max-w-[782px]">

@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import dynamic from "next/dynamic";
 
 // Ui - Components
@@ -7,8 +8,9 @@ const SubHeading = dynamic(() => import("@components/UI/SubHeading"));
 const LySponsor = () => {
   return (
     <>
-      <section
+      <Element
         id="sponsor"
+        name="sponsor"
         className="flex flex-col relative mt-20 sm:mt-24 lg:mt-32 px-0 sm:px-4"
       >
         <SubHeading
@@ -62,7 +64,7 @@ const LySponsor = () => {
             <span className="bg-[#5A5A5A] flex h-12 w-[176px]"></span>
           </div>
         </div>
-      </section>
+      </Element>
     </>
   );
 };

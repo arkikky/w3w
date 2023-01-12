@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import dynamic from "next/dynamic";
 
 // Css
@@ -9,8 +10,9 @@ const SubHeading = dynamic(() => import("@components/UI/SubHeading"));
 const LySchedule = () => {
   return (
     <>
-      <section
+      <Element
         id="schedule"
+        name="schedule"
         className="flex flex-col relative mt-[102px] px-0 sm:px-4"
       >
         <SubHeading
@@ -152,7 +154,7 @@ const LySchedule = () => {
             </article>
           </div>
         </div>
-      </section>
+      </Element>
     </>
   );
 };

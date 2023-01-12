@@ -1,5 +1,6 @@
-import getConfig from "next/config";
+import { Element } from "react-scroll";
 import Marquee from "react-fast-marquee";
+import getConfig from "next/config";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
@@ -42,13 +43,13 @@ const Home = () => {
           {/* Header */}
           <Header />
 
-          <section id="whatbethere">
+          <Element id="whatbethere" name="whatbethere">
             {/* Roadshow */}
             <Roadshow />
 
             {/* Timeline */}
             <Timeline />
-          </section>
+          </Element>
         </Container>
 
         {/* Banner (Description) */}
