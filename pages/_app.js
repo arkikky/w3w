@@ -41,10 +41,10 @@ const App = ({ Component, pageProps }) => {
           content="web3, web3 news, web3 technology, crypto, crypto market, cryptonomics, blockchain, what is blockchain, blockchain technology, blockchain explained, blockchain news, metaverse, metaverse explained, metaverse expansion, metaverse news, nft, nft explained, nft meaning, nft art, nft crypto, nft crypto, how to sell nft art, nft exhibition"
         />
         <meta name="author" content={`${publicRuntimeConfig.siteAuthor}`} />
-        <meta name="theme-color" content="#12E582" />
-        <meta name="msapplication-navbutton-color" content="#12E582" />
+        <meta name="theme-color" content="#1E1E1E" />
+        <meta name="msapplication-navbutton-color" content="#1E1E1E" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="#12E582" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="#1E1E1E" />
       </Head>
 
       {/* Main (App) */}

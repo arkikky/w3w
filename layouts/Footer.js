@@ -19,10 +19,10 @@ const Footer = () => {
     <>
       {/* Footer */}
       <footer id="footrMain">
-        <Container className="px-4">
+        <Container>
           <div className="bg-gray-800 flex flex-col lg:flex-row items-start lg:items-center justify-between py-6 sm:py-4 px-6 sm:px-8">
             <Image
-              className="flex relative h-8 w-auto max-w-max"
+              className="flex relative h-6 sm:h-8 w-auto max-w-max"
               src={`${publicRuntimeConfig.staticFolder}/w3w.svg`}
               alt={`${publicRuntimeConfig.appName} (LOGO)`}
               height={32}

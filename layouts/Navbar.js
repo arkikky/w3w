@@ -57,7 +57,7 @@ const Navbar = () => {
               url=""
             >
               <Image
-                className="flex relative h-7 lg:h-8 w-[94px] lg:w-[105px]"
+                className="flex relative h-6 sm:h-7 lg:h-8 w-max sm:w-[94px] lg:w-[105px]"
                 src={`${publicRuntimeConfig.staticFolder}/w3w.svg`}
                 alt={`${publicRuntimeConfig.appName} (LOGO)`}
                 height={32}
@@ -136,8 +136,6 @@ const Navbar = () => {
                 />
                 <button
                   className="navbar-toggle flex lg:hidden outline-none ml-3"
-                  data-toggle="#nvMnuPrimary"
-                  data-icons="#hmbrgerMnu"
                   onClick={toggleMenu}
                 >
                   <div
