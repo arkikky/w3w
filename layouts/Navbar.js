@@ -74,6 +74,7 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
+                    href="about"
                     activeClass="active"
                     to="about"
                     smooth={"easeInOutQuart"}
@@ -86,6 +87,7 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
+                    href="whatbethere"
                     activeClass="active"
                     to="whatbethere"
                     spy={true}
@@ -100,6 +102,7 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
+                    href="schedule"
                     activeClass="active"
                     to="schedule"
                     spy={true}
@@ -114,6 +117,7 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
+                    href="mentorsSpeakers"
                     activeClass="active"
                     to="mentorsSpeakers"
                     spy={true}
@@ -128,6 +132,7 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
+                    href="sponsor"
                     activeClass="active"
                     to="sponsor"
                     spy={true}
@@ -152,8 +157,11 @@ const Navbar = () => {
                 />
                 <button
                   className="navbar-toggle flex lg:hidden outline-none ml-3"
+                  aria-label="togleMnuPrimary"
+                  aria-labelledby="togleMnuPrimary"
                   onClick={toggleMenu}
                   type="button"
+                  role="button"
                 >
                   <div
                     id="hmbrgerMnu"
