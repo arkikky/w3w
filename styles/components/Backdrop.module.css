@@ -1,0 +1,33 @@
+/* Backdrop Gridlines */
+.backdrpGrdlne {
+  @apply absolute inset-y-0 inset-x-4 sm:inset-x-0;
+  @apply -z-px;
+}
+
+.backdrpGrdlneItms {
+  @apply relative;
+  @apply h-full;
+}
+
+.backdrpGrdlneItms::before {
+  @apply content-[""];
+  @apply flex;
+  background: linear-gradient(180deg, #272727, #272727 50%, transparent 0, transparent);
+  background-size: 20px 40px;
+  @apply absolute inset-y-0 left-0 right-auto;
+  @apply w-px h-full;
+  @apply z-10;
+}
+
+.backdrpGrdlneItms:first-child::before {
+  background: none;
+  @apply border-l border-solid border-black-50;
+}
+
+.backdrpGrdlneItms:last-child::after {
+  @apply content-[""];
+  @apply border-r border-solid border-black-50;
+  @apply absolute inset-y-0 left-auto right-0;
+  @apply w-px h-full;
+  @apply z-10;
+}

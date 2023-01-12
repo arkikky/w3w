@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@json/*": ["lib/json/*"],
+      "@styles/*": ["styles/*"],
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"]
+    }
+  }
+}
