@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2079" height="651.055" viewBox="0 0 2079 651.055">
+  <g id="Group_10" data-name="Group 10" transform="translate(0 0)">
+    <g id="Group_7" data-name="Group 7" transform="translate(0 1.367)">
+      <path id="Union_3" data-name="Union 3" d="M216.107,648.321H0V432.214H270.817V648.321ZM0,432.214V0H216.107V432.214Z" transform="translate(0 0)" fill="#fff"/>
+      <path id="Union_6" data-name="Union 6" d="M216.107,0H0V216.107H270.817V0ZM0,216.107V648.322H216.107V216.107Z" transform="translate(651.055 648.322) rotate(180)" fill="#fff"/>
+      <rect id="Rectangle_37" data-name="Rectangle 37" width="109.421" height="216.107" transform="translate(270.816 216.108)" fill="#fff"/>
+    </g>
+    <g id="Group_9" data-name="Group 9" transform="translate(1427.944 1.367)">
+      <path id="Union_3-2" data-name="Union 3" d="M216.107,648.321H0V432.214H270.817V648.321ZM0,432.214V0H216.107V432.214Z" transform="translate(0 0)" fill="#fff"/>
+      <path id="Union_6-2" data-name="Union 6" d="M216.107,0H0V216.107H270.817V0ZM0,216.107V648.322H216.107V216.107Z" transform="translate(651.055 648.322) rotate(180)" fill="#fff"/>
+      <rect id="Rectangle_37-2" data-name="Rectangle 37" width="109.421" height="216.107" transform="translate(270.816 216.108)" fill="#fff"/>
+    </g>
+    <g id="Group_8" data-name="Group 8" transform="translate(715.339 0)">
+      <path id="Union_12" data-name="Union 12" d="M216.107,648.321H0V432.214H270.817V648.321ZM0,432.214V0H216.107V432.214Z" transform="translate(0 651.055) rotate(-90)" fill="#12e582"/>
+      <path id="Union_9" data-name="Union 9" d="M0,648.32V432.214H216.106V648.32ZM0,432.214V0H270.818V216.106H216.106V432.214Z" transform="translate(648.322) rotate(90)" fill="#12e582"/>
+      <rect id="Rectangle_50" data-name="Rectangle 50" width="109.421" height="216.107" transform="translate(216.108 380.24) rotate(-90)" fill="#12e582"/>
+    </g>
+  </g>
+</svg>
