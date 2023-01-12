@@ -34,8 +34,6 @@ const BrandLogo = ({ url, images, alt, height, width }) => {
             (min-width: 1024px) 299vw,
             (min-width: 640px) 387vw,
             913vw"
-            placeholder="blur"
-            blurDataURL={`${publicRuntimeConfig.blurData}`}
             priority
           />
         )}

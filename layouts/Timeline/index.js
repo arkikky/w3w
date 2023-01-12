@@ -1,5 +1,4 @@
 import getConfig from "next/config";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 
 // # Get .config
@@ -7,8 +6,6 @@ const { publicRuntimeConfig } = getConfig();
 
 // Css
 import Timeline from "@styles/components/Timeln.module.css";
-
-// Ui - Components
 
 const LyTimeline = () => {
   return (
@@ -27,8 +24,6 @@ const LyTimeline = () => {
                 (min-width: 1024px) 463vw,
                 (min-width: 640px) 591vw,
                 657vw"
-                placeholder="blur"
-                blurDataURL={`${publicRuntimeConfig.blurData}`}
                 priority
               />
 
@@ -38,8 +33,6 @@ const LyTimeline = () => {
                 className="flex relative h-full w-full"
                 src={`${publicRuntimeConfig.staticFolder}/backdrop/backdrop-linecircuit-atas.svg`}
                 alt={`${publicRuntimeConfig.appName} (Line - Backdrop Timeline)`}
-                placeholder="blur"
-                blurDataURL={`${publicRuntimeConfig.blurData}`}
                 sizes="100vw"
                 height={650}
                 width={650}
@@ -84,8 +77,6 @@ const LyTimeline = () => {
                 (min-width: 1024px) 463vw,
                 (min-width: 640px) 591vw,
                 657vw"
-                placeholder="blur"
-                blurDataURL={`${publicRuntimeConfig.blurData}`}
                 priority
               />
 
@@ -95,8 +86,6 @@ const LyTimeline = () => {
                 className="h-full w-revert-layer"
                 src={`${publicRuntimeConfig.staticFolder}/backdrop/backdrop-linecircuit-tengah.svg`}
                 alt={`${publicRuntimeConfig.appName} (Line - Backdrop Timeline)`}
-                placeholder="blur"
-                blurDataURL={`${publicRuntimeConfig.blurData}`}
                 sizes="100vw"
                 height={650}
                 width={650}
@@ -119,8 +108,6 @@ const LyTimeline = () => {
                 (min-width: 1024px) 463vw,
                 (min-width: 640px) 591vw,
                 657vw"
-                placeholder="blur"
-                blurDataURL={`${publicRuntimeConfig.blurData}`}
                 priority
               />
 
@@ -130,8 +117,6 @@ const LyTimeline = () => {
                 className="flex relative h-full w-full"
                 src={`${publicRuntimeConfig.staticFolder}/backdrop/backdrop-linecircuit-bawah.svg`}
                 alt={`${publicRuntimeConfig.appName} (Line - Backdrop Timeline)`}
-                placeholder="blur"
-                blurDataURL={`${publicRuntimeConfig.blurData}`}
                 sizes="100vw"
                 height={650}
                 width={650}
@@ -176,8 +161,6 @@ const LyTimeline = () => {
                 (min-width: 1024px) 463vw,
                 (min-width: 640px) 591vw,
                 657vw"
-                placeholder="blur"
-                blurDataURL={`${publicRuntimeConfig.blurData}`}
                 priority
               />
             </div>

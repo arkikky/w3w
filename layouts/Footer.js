@@ -27,8 +27,6 @@ const Footer = () => {
               alt={`${publicRuntimeConfig.appName} (LOGO)`}
               height={32}
               width={105}
-              placeholder="blur"
-              blurDataURL={`${publicRuntimeConfig.blurData}`}
             />
             <p className="text-white font-fira-code text-sm font-normal text-left lg:text-center uppercase mt-4 lg:mt-0 w-full lg:max-w-[533px] 2xl:max-w-max">
               All rights reserved. WEB3 weekend is organized by Coinvestasi, a

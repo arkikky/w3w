@@ -62,8 +62,6 @@ const Navbar = () => {
                 alt={`${publicRuntimeConfig.appName} (LOGO)`}
                 height={32}
                 width={105}
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
               />
             </PostLink>
             <div className="flex flex-row items-center">
@@ -137,6 +135,7 @@ const Navbar = () => {
                 <button
                   className="navbar-toggle flex lg:hidden outline-none ml-3"
                   onClick={toggleMenu}
+                  type="button"
                 >
                   <div
                     id="hmbrgerMnu"
