@@ -1,0 +1,17 @@
+[{
+    "id": 1,
+    "url": "https://www.coindesk.id/",
+    "images": "/assets/images/media-partner/coindesk-indonesia.svg",
+    "alt": "W3W (Coindesk -  Media Partner)",
+    "height": "30",
+    "width": "145"
+  },
+  {
+    "id": 2,
+    "url": "https://coinvestasi.com/",
+    "images": "/assets/images/media-partner/coinvestasi.svg",
+    "alt": "W3W (Coinvestasi - Media Partner)",
+    "height": "30",
+    "width": "181"
+  }
+]
