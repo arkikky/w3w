@@ -18,6 +18,7 @@ const Buttons = dynamic(() => import("@components/UI/Buttons"));
 
 // Layouts
 const Header = dynamic(() => import("@layouts/Header"));
+const Roadshow = dynamic(() => import("@layouts/Roadshow"));
 const Timeline = dynamic(() => import("@layouts/Timeline"));
 const Schedule = dynamic(() => import("@layouts/Schedule"));
 const MentorsSpeaker = dynamic(() => import("@layouts/MentorsSpeaker"));
@@ -42,6 +43,10 @@ const Home = () => {
           <Header />
 
           <section id="whatbethere">
+            {/* Roadshow */}
+            <Roadshow />
+
+            {/* Timeline */}
             <Timeline />
           </section>
         </Container>
