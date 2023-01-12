@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  compiler: {
+    removeConsole: true,
+  },
   reactStrictMode: true,
   swcMinify: true,
   images: {
     domains: ["https://w3w.netlify.app/"],
-    deviceSizes: [2048],
-    imageSizes: [64],
+    deviceSizes: [3840],
+    imageSizes: [384],
     formats: ["image/avif", "image/webp"],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",

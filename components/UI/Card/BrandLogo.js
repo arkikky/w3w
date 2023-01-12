@@ -28,14 +28,14 @@ const BrandLogo = ({ url, images, alt, height, width }) => {
             className="img-fill w-max xl:w-revert-layer"
             src={addImgs}
             alt={addAlt}
-            placeholder="blur"
-            blurDataURL={`${publicRuntimeConfig.blurData}`}
-            sizes="(min-width: 1280px) 100vw,
-            (min-width: 1024px) 159vw,
-            (min-width: 640px) 197vw,
-            483vw"
             height={addHeight}
             width={addWitdth}
+            sizes="(min-width: 1280px) 100vw,
+            (min-width: 1024px) 299vw,
+            (min-width: 640px) 387vw,
+            913vw"
+            placeholder="blur"
+            blurDataURL={`${publicRuntimeConfig.blurData}`}
             priority
           />
         )}

@@ -56,7 +56,7 @@ const Home = () => {
         {/* Banner (Marquee) */}
         <section
           id="bnnerMarquee"
-          className={`${Card.bnnerMarque} bg-gradient-purple flex flex-col overflow-hidden relative py-14 sm:py-16 lg:py-[88px]`}
+          className={`${Card.bnnerMarque} bg-gradient-purple flex flex-col overflow-hidden relative py-14 sm:py-16 lg:py-[88px] z-50`}
         >
           <div className="overflow-hidden absolute inset-y-0 inset-x-0 z-[2]">
             <div className="absolute inset-y-0 inset-x-0 z-[2]">

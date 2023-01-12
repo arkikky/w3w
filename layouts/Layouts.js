@@ -1,6 +1,5 @@
 import getConfig from "next/config";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 
 // # Get .config
 const { publicRuntimeConfig } = getConfig();
@@ -14,13 +13,16 @@ const Container = dynamic(() => import("@components/Container"));
 const ImagesFill = dynamic(() => import("@components/UI/ImagesFill"));
 
 // Layouts - Components]
+const Navbar = dynamic(() => import("@layouts/Navbar"));
 const Footer = dynamic(() => import("@layouts/Footer"));
-import Navbar from "@layouts/Navbar";
 
 const Layouts = ({ children }) => {
   return (
     <>
       <div className="overflow-hidden relative pb-4 sm:pb-6">
+        {/* Navbar */}
+        <Navbar />
+
         {/* Backdrop (Gridlines) */}
         <Container className="fixed inset-y-0 inset-x-0 -z-px">
           <div
@@ -61,7 +63,7 @@ const Layouts = ({ children }) => {
         </Container>
 
         {/* Sticky Textline */}
-        <div className="fixed inset-y-0 inset-x-0 select-none pointer-events-none z-[60]">
+        <div className="fixed inset-y-0 inset-x-0 select-none pointer-events-none z-[25]">
           <Container className="absolute inset-y-0 inset-x-0 h-full min-h-screen">
             <section
               className={`${Card.stckyTxtline} flex flex-row gap-x-4 sm:gap-x-6 font-fira-code font-medium uppercase`}

@@ -30,14 +30,14 @@ const LyMediaPartner = () => {
             className="img-fill w-max xl:w-revert-layer"
             src={stDataRslt.images}
             alt={stDataRslt.alt}
-            placeholder="blur"
-            blurDataURL={`${publicRuntimeConfig.blurData}`}
-            sizes="(min-width: 1280px) 100vw,
-              (min-width: 1024px) 203vw,
-              (min-width: 640px) 231vw,
-              567vw"
             height={stDataRslt.height}
             width={stDataRslt.width}
+            sizes="(min-width: 1280px) 100vw,
+            (min-width: 1024px) 343vw,
+            (min-width: 640px) 451vw,
+            967vw"
+            placeholder="blur"
+            blurDataURL={`${publicRuntimeConfig.blurData}`}
             priority
           />
         </>

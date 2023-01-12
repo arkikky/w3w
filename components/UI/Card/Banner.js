@@ -14,7 +14,7 @@ const Banner = ({ id, title, description }) => {
     <>
       <section
         id={addId}
-        className={`${Card.bnner} ${Card.bnnerWide} flex flex-col items-center justify-center relative py-14`}
+        className={`${Card.bnner} ${Card.bnnerWide} flex flex-col items-center justify-center relative py-14 z-50`}
       >
         <div className={`${Card.bnnerWideContent} text-center mx-auto w-max`}>
           {addTitle && (
