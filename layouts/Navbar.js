@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import getConfig from "next/config";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import Image from "next/image";
 
 // # Get .config
@@ -9,6 +10,7 @@ const { publicRuntimeConfig } = getConfig();
 // Ui - Components
 const Container = dynamic(() => import("@components/Container"));
 const PostLink = dynamic(() => import("@components/UI/Post/PostLink"));
+const Buttons = dynamic(() => import("@components/UI/Buttons"));
 
 const Navbar = () => {
   // Toggle
@@ -65,11 +67,78 @@ const Navbar = () => {
               />
             </PostLink>
             <div className="flex flex-row items-center">
+              <ul
+                id="nvMnuPrimary"
+                className={`navbar-nav nav menu flex flex-col sm:flex-row mr-0 lg:mr-8 ${
+                  menu ? "on" : ""
+                }`}
+              >
+                <li className="menu-item">
+                  <Link
+                    className="menu-link uppercase outline-none"
+                    href={""}
+                    prefetch={false}
+                    passHref
+                  >
+                    About
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link
+                    className="menu-link uppercase outline-none"
+                    href={""}
+                    prefetch={false}
+                    passHref
+                  >
+                    What’ll be there
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link
+                    className="menu-link uppercase outline-none"
+                    href={""}
+                    prefetch={false}
+                    passHref
+                  >
+                    Schedules
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link
+                    className="menu-link uppercase outline-none"
+                    href={""}
+                    prefetch={false}
+                    passHref
+                  >
+                    Mentors
+                  </Link>
+                </li>
+                <li className="menu-item">
+                  <Link
+                    className="menu-link uppercase outline-none"
+                    href={""}
+                    prefetch={false}
+                    passHref
+                  >
+                    Sponsor
+                  </Link>
+                </li>
+              </ul>
               <div className="flex flex-row items-center">
+                <Buttons
+                  typeBtn="btn-blank-link"
+                  className="text-xs lg:text-sm py-2 sm:py-3 lg:py-3 px-3 sm:px-6 lg:px-6"
+                  url="https://e7bao9msf39.typeform.com/to/c1WBrXM7"
+                  label="Become a Sponsor"
+                  variants="btn-primary"
+                  text="uppercase"
+                  position="center"
+                />
                 <button
                   className="navbar-toggle flex lg:hidden outline-none ml-3"
                   data-toggle="#nvMnuPrimary"
                   data-icons="#hmbrgerMnu"
+                  onClick={toggleMenu}
                 >
                   <div
                     id="hmbrgerMnu"
