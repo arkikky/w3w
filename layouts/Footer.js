@@ -29,7 +29,6 @@ const Footer = () => {
               blurDataURL={`${publicRuntimeConfig.blurData}`}
               height={32}
               width={102}
-              priority
             />
             <p className="text-white font-fira-code text-sm font-normal text-left lg:text-center uppercase mt-4 lg:mt-0 w-full lg:max-w-[533px] 2xl:max-w-max">
               All rights reserved. WEB3 weekend is organized by Coinvestasi, a
