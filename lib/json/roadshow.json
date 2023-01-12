@@ -1,0 +1,22 @@
+[{
+    "id": 1,
+    "src": "/assets/images/roadshow/bali.jpg",
+    "title": "Bali",
+    "place": "Summer House",
+    "date": "17-18 mar"
+  },
+  {
+    "id": 2,
+    "src": "/assets/images/roadshow/yogyakarta.jpg",
+    "title": "Yogyakarta",
+    "place": "Summer House",
+    "date": "24-25 Mar"
+  },
+  {
+    "id": 3,
+    "src": "/assets/images/roadshow/jakarta.jpg",
+    "title": "Jakarta",
+    "place": "Trendora Cafe",
+    "date": "10-11 Mar"
+  }
+]
