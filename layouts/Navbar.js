@@ -62,6 +62,8 @@ const Navbar = () => {
                 alt={`${publicRuntimeConfig.appName} (LOGO)`}
                 height={32}
                 width={105}
+                placeholder="blur"
+                blurDataURL={`${publicRuntimeConfig.blurData}`}
               />
             </PostLink>
             <div className="flex flex-row items-center">

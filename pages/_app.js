@@ -1,4 +1,3 @@
-import { Analytics } from '@vercel/analytics/react';
 import getConfig from "next/config";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -17,7 +16,6 @@ const App = ({ Component, pageProps }) => {
     return Component.getLayout(
       <>
         <Component {...pageProps} />
-        <Analytics />
       </>
     );
   }
@@ -52,7 +50,6 @@ const App = ({ Component, pageProps }) => {
       {/* Main (App) */}
       <Layouts>
         <Component {...pageProps} />
-        <Analytics />
       </Layouts>
     </>
   );

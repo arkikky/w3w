@@ -6,6 +6,7 @@ import Image from "next/image";
 const { publicRuntimeConfig } = getConfig();
 
 // Css
+import Imags from "@styles/components/Images.module.css";
 import Timeline from "@styles/components/Timeln.module.css";
 
 // Ui - Components
@@ -19,7 +20,7 @@ const LyTimeline = () => {
           <div className="col-span-full sm:col-span-6">
             <div className="relative">
               <Image
-                className="img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer"
+                className={`img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
                 src={`${publicRuntimeConfig.staticFolder}/timeline/catch-project-showcases.png`}
                 alt={`${publicRuntimeConfig.appName} (Timeline)`}
                 height={578}
@@ -28,6 +29,7 @@ const LyTimeline = () => {
                 (min-width: 1024px) 463vw,
                 (min-width: 640px) 591vw,
                 657vw"
+                priority
               />
             </div>
           </div>
@@ -57,8 +59,8 @@ const LyTimeline = () => {
           </div>
           <div className="col-span-full sm:col-span-6 order-first sm:order-last">
             <div className="relative">
-              <Image
-                className="img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer"
+              {/* <Image
+                className={`img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
                 src={`${publicRuntimeConfig.staticFolder}/timeline/solve-your-problem.png`}
                 alt={`${publicRuntimeConfig.appName} (Timeline)`}
                 height={650}
@@ -68,6 +70,12 @@ const LyTimeline = () => {
                 (min-width: 640px) 591vw,
                 657vw"
                 priority
+              /> */}
+              <ImagesFill
+                className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
+                src={`${publicRuntimeConfig.staticFolder}/timeline/solve-your-problem.png`}
+                alt={`${publicRuntimeConfig.appName} (Timelines)`}
+                priority={true}
               />
 
               {/* Backdrop (Stairs) */}
@@ -88,8 +96,8 @@ const LyTimeline = () => {
         <article className="supports-grid:grid grid-cols-4 sm:grid-cols-12 relative mt-16 sm:mt-0 px-0 sm:px-4">
           <div className="col-span-full sm:col-span-6">
             <div className="relative">
-              <Image
-                className="img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer"
+              {/* <Image
+                className={`img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
                 src={`${publicRuntimeConfig.staticFolder}/timeline/learn-all-about.png`}
                 alt={`${publicRuntimeConfig.appName} (Timeline)`}
                 height={650}
@@ -99,6 +107,12 @@ const LyTimeline = () => {
                 (min-width: 640px) 591vw,
                 657vw"
                 priority
+              /> */}
+              <ImagesFill
+                className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
+                src={`${publicRuntimeConfig.staticFolder}/timeline/learn-all-about.png`}
+                alt={`${publicRuntimeConfig.appName} (Timelines)`}
+                priority={true}
               />
 
               {/* Backdrop (Stairs) */}
@@ -141,8 +155,8 @@ const LyTimeline = () => {
           </div>
           <div className="col-span-full sm:col-span-6 timelnsImgsLeft order-first sm:order-last">
             <div className="relative">
-              <Image
-                className="img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer"
+              {/* <Image
+                className={`img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
                 src={`${publicRuntimeConfig.staticFolder}/timeline/network-and-participate.png`}
                 alt={`${publicRuntimeConfig.appName} (Timeline)`}
                 height={650}
@@ -152,6 +166,12 @@ const LyTimeline = () => {
                 (min-width: 640px) 591vw,
                 657vw"
                 priority
+              /> */}
+              <ImagesFill
+                className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
+                src={`${publicRuntimeConfig.staticFolder}/timeline/network-and-participate.png`}
+                alt={`${publicRuntimeConfig.appName} (Timelines)`}
+                priority={true}
               />
             </div>
           </div>
