@@ -1,9 +1,13 @@
 version = 1
 
 [[analyzers]]
-name = "secrets"
-enabled = true
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = ["react"]
 
 [[analyzers]]
-name = "javascript"
-enabled = true
+name = "secrets"
+
+[[transformers]]
+name = "standardjs"

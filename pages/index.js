@@ -99,6 +99,22 @@ const Home = () => {
               <span>Dao</span>
               <span className="font-medium mx-2">/</span>
             </div>
+            <div className="flex flex-row items-center whitespace-nowrap">
+              <span>WEB3</span>
+              <span className="font-medium mx-2">/</span>
+              <span>Infrastructure Blockchain</span>
+              <span className="font-medium mx-2">/</span>
+              <span>Blockchain</span>
+              <span className="font-medium mx-2">/</span>
+              <span>NFT</span>
+              <span className="font-medium mx-2">/</span>
+              <span>Metaverse</span>
+              <span className="font-medium mx-2">/</span>
+              <span>Defi</span>
+              <span className="font-medium mx-2">/</span>
+              <span>Dao</span>
+              <span className="font-medium mx-2">/</span>
+            </div>
           </Marquee>
         </section>
 

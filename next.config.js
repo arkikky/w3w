@@ -7,7 +7,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["https://w3w.netlify.app/"],
+    domains: [process.env.NEXT_PUBLIC_DOMAIN],
     deviceSizes: [3840],
     imageSizes: [384],
     formats: ["image/avif", "image/webp"],
