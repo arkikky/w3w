@@ -5,7 +5,7 @@ const Banner = ({ id, title, description }) => {
   const addId = id ? id : "bnnerCompnent";
   const addTitle = title
     ? title
-    : "3 CITIES, 1 WEEK, 1 CAREER CHANGING EVENT: WEB3 WEEKEND.";
+    : "3 CITIES, 3 WEEKS, 1 CAREER CHANGING EVENT: WEB3 WEEKEND.";
   const addDescription = description
     ? description
     : "BRINGING TOGETHER DEVELOPERS, FOUNDERS, AND COMMUNITY BUILDERS FOCUSED ON BUILDING THE FUTURE OF WEB3.";
@@ -14,7 +14,7 @@ const Banner = ({ id, title, description }) => {
     <>
       <section
         id={addId}
-        className={`${Card.bnner} ${Card.bnnerWide} flex flex-col items-center justify-center relative py-14 z-50`}
+        className={`${Card.bnner} ${Card.bnnerWide} flex flex-col items-center justify-center relative py-14`}
       >
         <div className={`${Card.bnnerWideContent} text-center mx-auto w-max`}>
           {addTitle && (

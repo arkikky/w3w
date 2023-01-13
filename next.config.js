@@ -4,13 +4,15 @@ const nextConfig = {
   compiler: {
     removeConsole: true,
   },
+  compress: true,
   reactStrictMode: true,
   swcMinify: true,
+  trailingSlash: true,
   images: {
     domains: [process.env.NEXT_PUBLIC_DOMAIN],
-    deviceSizes: [3840],
-    imageSizes: [384],
     formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 60,
+    disableStaticImages: false,
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
@@ -27,8 +29,7 @@ const nextConfig = {
   },
   webpack(config) {
     config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: /\.[jt]sx?$/,
+      test: /\.svg$/,
       use: ["@svgr/webpack"],
     });
 

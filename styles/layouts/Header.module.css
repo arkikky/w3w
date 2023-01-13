@@ -33,8 +33,7 @@
 }
 
 .headerImgsItems {
-  @apply hidden select-none pointer-events-none;
-  @apply absolute top-[173px] left-auto -right-[115px] sm:-right-[245px] lg:-right-[407px] xl:-right-[397px] bottom-0;
+  @apply hidden absolute top-[173px] left-auto -right-[115px] sm:-right-[245px] lg:-right-[407px] xl:-right-[397px] bottom-0;
   @apply h-[126px] sm:h-[273px] lg:h-[415px] xl:h-[499px]; 
   @apply w-[270px] sm:w-[586px] lg:w-[896px] xl:w-[1076px];
   @apply z-px;
@@ -42,7 +41,7 @@
 
 @screen xxs {
   .headerImgsItems {
-    @apply flex select-none pointer-events-none;
+    @apply flex;
 
     animation: glowUp 2s ease-in-out infinite running; 
   }
@@ -55,14 +54,13 @@
 } 
 
 .headerImgs {
-  @apply hidden select-none pointer-events-none;
+  @apply hidden;
   @apply -z-px;
 }
 
 @screen xxs {
   .headerImgs {
-    @apply flex select-none pointer-events-none;
-    @apply absolute top-auto sm:top-[241px] lg:top-20 xl:-top-10 2xl:top-0 left-auto -right-[123px] sm:-right-[265px] lg:-right-[434px] -bottom-[77px] sm:bottom-0;
+    @apply flex absolute top-auto sm:top-[241px] lg:top-20 xl:-top-10 2xl:top-0 left-auto -right-[123px] sm:-right-[265px] lg:-right-[434px] -bottom-[77px] sm:bottom-0;
     @apply h-[187px] sm:h-[373px] lg:h-[545px] xl:h-[751px];
     @apply w-[290px] sm:w-[633px] lg:w-[960px] xl:w-[1160px];
     @apply -z-px; 

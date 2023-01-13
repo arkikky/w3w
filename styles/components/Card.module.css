@@ -1,6 +1,6 @@
 /* Box */
 .bx {
-  @apply flex flex-col relative;
+  @apply relative;
   @apply h-[172px];
   @apply min-h-[172px];
   @apply max-h-[172px];
@@ -52,7 +52,7 @@
 }
 
 .bnnerIn {
-  @apply bg-gradient-purple;
+  background-image: url("/assets/images/backdrop/backdrop-banner.jpg");
   @apply bg-no-repeat bg-cover object-cover;
   @apply py-12 sm:py-14 lg:py-[77px] px-4 sm:px-14 lg:px-[94px];
 }
@@ -75,16 +75,13 @@
 
 /* Banner Marque */
 .bnnerMarque {
-  @apply bg-gradient-purple;
+  background-image: url("/assets/images/backdrop/backdrop-banner.jpg");
   @apply bg-no-repeat bg-cover object-cover;
 }
 
 /* Sticky Text Line */
 .stckyTxtline {
-  @apply relative;
-  @apply -mt-24 xl:-mt-[224px] 2xl:-mt-24;
-  @apply -ml-[1.6px] sm:-ml-[9px] lg:-ml-[13px] xl:-ml-[17px] 2xl:-ml-5;
-  @apply origin-top-left transform rotate-90;
+  @apply sticky -top-[114px] 2xl:-top-24 -mt-[265px] 2xl:-mt-[202px] -ml-px sm:-ml-[9px] lg:-ml-[13px] xl:-ml-[17px] 2xl:-ml-5 origin-top-left transform rotate-90;
 }
  
 .stckyTxtlineGroup {
@@ -92,7 +89,7 @@
 }
 
 .stckyTxtlineGroup li {
-  @apply text-gray-400;
+  @apply text-gray-400/30;
   @apply mr-4 sm:mr-6 last:mr-0;
 }
 

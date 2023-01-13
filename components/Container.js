@@ -1,9 +1,5 @@
 const Container = ({ className, children }) => {
-  const defltClass = `container`;
-
-  const addClassName = className
-    ? `${defltClass} ${className}`
-    : `${defltClass}`;
+  const addClassName = className ? `container ${className}` : `container`;
 
   return (
     <>

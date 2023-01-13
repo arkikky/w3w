@@ -1,33 +1,32 @@
-import { Element } from "react-scroll";
-import Marquee from "react-fast-marquee";
 import getConfig from "next/config";
+import Marquee from "react-fast-marquee";
 import dynamic from "next/dynamic";
-import Image from "next/image";
-
-// Css
-import Card from "@styles/components/Card.module.css";
 
 // # Get .config
 const { publicRuntimeConfig } = getConfig();
+
+// Css
+import Card from "@styles/components/Card.module.css";
 
 // Ui - Components
 const Head = dynamic(() => import("@components/Head"));
 const Container = dynamic(() => import("@components/Container"));
 const Main = dynamic(() => import("@components/Main"));
 const Banner = dynamic(() => import("@components/UI/Card/Banner"));
-const Buttons = dynamic(() => import("@components/UI/Buttons"));
+const Buttons = dynamic(() => import("@components/UI/Buttons/Buttons"));
+const ImagesFill = dynamic(() => import("@components/UI/ImagesFill"));
 
 // Layouts
-const Header = dynamic(() => import("@layouts/Header"));
-const Roadshow = dynamic(() => import("@layouts/Roadshow"));
-import Timeline from "@layouts/Timeline";
-const Schedule = dynamic(() => import("@layouts/Schedule"));
-const MentorsSpeaker = dynamic(() => import("@layouts/MentorsSpeaker"));
-const Sponsor = dynamic(() => import("@layouts/Sponsor"));
-const MediaPartner = dynamic(() => import("@layouts/MediaPartner"));
-const FromCreator = dynamic(() => import("@layouts/FromCreator"));
+import Header from "@layouts/Header";
+import Roadshow from "@layouts/Roadshow";
+import Timelines from "@layouts/Timelines";
+import Schedule from "@layouts/Schedule";
+import MentorsSpeaker from "@layouts/MentorsSpeakers";
+import Sponsor from "@layouts/Sponsor";
+import MediaPartner from "@layouts/MediaPartner";
+import FromCreators from "@layouts/FromCreators";
 
-const Home = () => {
+export default function App() {
   return (
     <>
       <Head
@@ -37,44 +36,38 @@ const Home = () => {
         description="Web 3 Week (W3W), Builders convention focused on web3"
       />
 
-      {/* Main (Home) */}
       <Main>
         <Container>
           {/* Header */}
           <Header />
 
-          <Element id="whatbethere" name="whatbethere">
+          <div id="whatbethere">
             {/* Roadshow */}
             <Roadshow />
 
-            {/* Timeline */}
-            <Timeline />
-          </Element>
+            {/* Timelines */}
+            <Timelines />
+          </div>
         </Container>
 
         {/* Banner (Description) */}
         <Banner
           id="bnnerDesc"
-          title="3 Cities, 1 week, 1 Career Changing Event: WEB3 WEEKEND."
+          title="3 Cities, 3 weeks, 1 Career Changing Event: WEB3 WEEKEND."
           description="BRINGING TOGETHER DEVELOPERS, FOUNDERS, STUDENTS, AND COMMUNITY BUILDERS FOCUSED ON BUILDING THE FUTURE OF WEB3."
         />
 
         {/* Banner (Marquee) */}
         <section
           id="bnnerMarquee"
-          className={`${Card.bnnerMarque} bg-gradient-purple flex flex-col overflow-hidden relative py-14 sm:py-16 lg:py-[88px] z-50`}
+          className={`${Card.bnnerMarque} flex flex-col overflow-hidden relative py-14 sm:py-16 lg:py-[88px]`}
         >
-          <div className="overflow-hidden absolute inset-y-0 inset-x-0 z-[2]">
-            <div className="absolute inset-y-0 inset-x-0 z-[2]">
-              <Image
-                className="img-cover"
-                src={`${publicRuntimeConfig.staticFolder}/backdrop/backdrop-gridlines-3d.svg`}
-                alt={`${publicRuntimeConfig.appName} (Backdrop Gridlines 3D)`}
-                height={557}
-                width={1120}
-                priority
-              />
-            </div>
+          <div className="absolute inset-y-0 inset-x-0 -mt-12 z-[2]">
+            <ImagesFill
+              className="flex relative h-full w-full"
+              src={`${publicRuntimeConfig.staticFolder}/backdrop/backdrop-gridlines-3d.svg`}
+              alt={`${publicRuntimeConfig.appName} (Backdrop Gridlines 3D)`}
+            />
           </div>
 
           <Marquee
@@ -83,38 +76,40 @@ const Home = () => {
             gradient={false}
             pauseOnHover={true}
           >
-            <div className="flex flex-row items-center whitespace-nowrap">
-              <span>WEB3</span>
-              <span className="font-medium mx-2">/</span>
-              <span>Infrastructure Blockchain</span>
-              <span className="font-medium mx-2">/</span>
-              <span>Blockchain</span>
-              <span className="font-medium mx-2">/</span>
-              <span>NFT</span>
-              <span className="font-medium mx-2">/</span>
-              <span>Metaverse</span>
-              <span className="font-medium mx-2">/</span>
-              <span>Defi</span>
-              <span className="font-medium mx-2">/</span>
-              <span>Dao</span>
-              <span className="font-medium mx-2">/</span>
-            </div>
-            <div className="flex flex-row items-center whitespace-nowrap">
-              <span>WEB3</span>
-              <span className="font-medium mx-2">/</span>
-              <span>Infrastructure Blockchain</span>
-              <span className="font-medium mx-2">/</span>
-              <span>Blockchain</span>
-              <span className="font-medium mx-2">/</span>
-              <span>NFT</span>
-              <span className="font-medium mx-2">/</span>
-              <span>Metaverse</span>
-              <span className="font-medium mx-2">/</span>
-              <span>Defi</span>
-              <span className="font-medium mx-2">/</span>
-              <span>Dao</span>
-              <span className="font-medium mx-2">/</span>
-            </div>
+            <>
+              <div className="flex flex-row items-center whitespace-nowrap">
+                <span>WEB3</span>
+                <span className="font-medium mx-2">/</span>
+                <span>Infrastructure Blockchain</span>
+                <span className="font-medium mx-2">/</span>
+                <span>Blockchain</span>
+                <span className="font-medium mx-2">/</span>
+                <span>NFT</span>
+                <span className="font-medium mx-2">/</span>
+                <span>Metaverse</span>
+                <span className="font-medium mx-2">/</span>
+                <span>Defi</span>
+                <span className="font-medium mx-2">/</span>
+                <span>Dao</span>
+                <span className="font-medium mx-2">/</span>
+              </div>
+              <div className="flex flex-row items-center whitespace-nowrap">
+                <span>WEB3</span>
+                <span className="font-medium mx-2">/</span>
+                <span>Infrastructure Blockchain</span>
+                <span className="font-medium mx-2">/</span>
+                <span>Blockchain</span>
+                <span className="font-medium mx-2">/</span>
+                <span>NFT</span>
+                <span className="font-medium mx-2">/</span>
+                <span>Metaverse</span>
+                <span className="font-medium mx-2">/</span>
+                <span>Defi</span>
+                <span className="font-medium mx-2">/</span>
+                <span>Dao</span>
+                <span className="font-medium mx-2">/</span>
+              </div>
+            </>
           </Marquee>
         </section>
 
@@ -122,7 +117,7 @@ const Home = () => {
           {/* Schedule */}
           <Schedule />
 
-          {/* Mentors Speaker */}
+          {/* Mentors & Speakers */}
           <MentorsSpeaker />
 
           {/* Sponsor */}
@@ -131,28 +126,25 @@ const Home = () => {
           {/* Media Partner */}
           <MediaPartner />
 
-          {/* From Creator */}
-          <FromCreator />
+          {/* From Creators */}
+          <FromCreators />
 
           {/* Banner (Join The Builders) */}
           <section
             className={`${Card.bnnerIn} relative mx-0 sm:mx-4 mb-10 sm:mb-18 lg:mb-28`}
           >
             <div className="overflow-hidden absolute inset-y-0 inset-x-0 z-[2]">
-              <div className="absolute inset-y-0 inset-x-0 z-[2]">
-                <Image
-                  className="img-cover"
+              <div className="absolute inset-y-0 inset-x-0 -mt-12 z-[2]">
+                <ImagesFill
+                  className="flex relative h-full w-full"
                   src={`${publicRuntimeConfig.staticFolder}/backdrop/backdrop-gridlines-3d.svg`}
                   alt={`${publicRuntimeConfig.appName} (Backdrop Gridlines 3D)`}
-                  height={557}
-                  width={1120}
-                  priority
                 />
               </div>
             </div>
 
             <div className="bnner-in-content supports-grid:grid gap-y-3 sm:gap-y-4 relative z-50">
-              <h1 className="title text-otlne text-otlne-white font-w3w-bold text-[17px] sm:text-[39px] lg:text-[49px] xl:text-[72px] 2xl:text-[76px] font-bold leading-tight tracking-[3px] sm:tracking-normal text-center uppercase">
+              <h1 className="title text-otlne text-otlne-white font-w3w-bold text-[17px] sm:text-[39px] lg:text-[49px] xl:text-[73px] 2xl:text-[77px] font-bold leading-tight tracking-[3px] sm:tracking-normal text-center uppercase">
                 JOIN THE BUILDERS!
               </h1>
               <div className="mx-auto w-max">
@@ -172,6 +164,4 @@ const Home = () => {
       </Main>
     </>
   );
-};
-
-export default Home;
+}

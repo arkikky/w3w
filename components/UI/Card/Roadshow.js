@@ -11,23 +11,22 @@ import Card from "@styles/components/Card.module.css";
 const ImagesFill = dynamic(() => import("@components/UI/ImagesFill"));
 
 const Roadshow = ({ src, title, location, place, date }) => {
-  const addImags = src ? src : "";
+  const addImgs = src ? src : "";
   const addTitle = title ? title : (title = false);
   const addLocation = location ? location : (location = false);
-  // const addPlace = place ? place : (place = false);
-  // const addDate = date ? date : (date = false);
+  const addPlace = place ? place : (place = false);
+  const addDate = date ? date : (date = false);
 
   return (
     <>
-      <article
+      <section
         className={`${Card.bxRdshow} relative transition duration-300 ease-in-out`}
       >
-        {addImags && (
+        {addImgs && (
           <ImagesFill
             className="h-full w-full"
-            src={addImags}
+            src={addImgs}
             alt={`${publicRuntimeConfig.appName} (Roadshow)`}
-            priority={true}
           />
         )}
         <div className={`${Card.bxRdshowContent}`}>
@@ -80,7 +79,7 @@ const Roadshow = ({ src, title, location, place, date }) => {
             </div>
           )}
         </div> */}
-      </article>
+      </section>
     </>
   );
 };

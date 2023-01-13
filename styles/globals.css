@@ -16,7 +16,7 @@ html {
 
 body {
   @apply bg-black-100;
-  /* @apply text-white font-fira-code text-base font-medium; */
+  @apply text-white font-fira-code text-base font-medium;
   @apply h-screen;
 }
 
@@ -30,7 +30,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  @apply bg-[#4e525a]; 
+  @apply bg-[#4e525a];
   @apply rounded-full;
   @apply border-none;
 }
@@ -133,7 +133,7 @@ body::-webkit-scrollbar-thumb {
     background: none;
     @apply relative;
     @apply flex flex-row;
-    backface-visibility: visible; 
+    backface-visibility: visible;
     @apply visible;
     @apply opacity-100;
     @apply z-10;

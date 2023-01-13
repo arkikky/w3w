@@ -1,47 +1,36 @@
 import { useState } from "react";
-import getConfig from "next/config";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import Image from "next/image";
-
-// # Get .config
-const { publicRuntimeConfig } = getConfig();
 
 // Ui - Components
-const SubHeading = dynamic(() => import("@components/UI/SubHeading"));
+const SubHeading = dynamic(() =>
+  import("@components/UI/SubHeading/SubHeading")
+);
 
-// Lib - Json
+// Json
 import mockMdiaPartnr from "@json/mediaPartner.json";
 
-const LyMediaPartner = () => {
+const LyMediaPartners = () => {
   const [gtMdiaPartnr, stMdiaPartnr] = useState(mockMdiaPartnr);
 
-  const resMdiaPartnr = gtMdiaPartnr?.map((stDataRslt) => {
+  const resMdiaPartnr = gtMdiaPartnr?.map((stDataRslt, i) => {
     return (
-      <Link
-        key={stDataRslt.id}
-        className="flex flex-1 sm:flex-none items-center justify-center outline-none px-4"
-        href={stDataRslt.url}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <div key={i + 1} className="flex items-center justify-center px-4">
         <>
-          <Image
-            className="img-fill w-max xl:w-revert-layer"
-            src={stDataRslt.images}
-            alt={stDataRslt.alt}
-            height={stDataRslt.height}
-            width={stDataRslt.width}
-            sizes="(min-width: 1280px) 100vw,
-              (min-width: 1024px) 343vw,
-              (min-width: 640px) 451vw,
-              967vw"
-            placeholder="blur"
-            blurDataURL={`${publicRuntimeConfig.blurData}`}
-            priority
-          />
+          <Link
+            className="outline-none"
+            href={stDataRslt.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="object-center object-cover h-auto w-auto"
+              src={stDataRslt.images}
+              alt={stDataRslt.alt}
+            />
+          </Link>
         </>
-      </Link>
+      </div>
     );
   });
 
@@ -73,4 +62,4 @@ const LyMediaPartner = () => {
   );
 };
 
-export default LyMediaPartner;
+export default LyMediaPartners;

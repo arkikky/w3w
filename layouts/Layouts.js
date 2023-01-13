@@ -13,8 +13,8 @@ const Container = dynamic(() => import("@components/Container"));
 const ImagesFill = dynamic(() => import("@components/UI/ImagesFill"));
 
 // Layouts - Components]
-const Navbar = dynamic(() => import("@layouts/Navbar"));
-const Footer = dynamic(() => import("@layouts/Footer"));
+import Navbar from "@layouts/Navbar";
+import Footer from "@layouts/Footer";
 
 const Layouts = ({ children }) => {
   return (
@@ -25,7 +25,7 @@ const Layouts = ({ children }) => {
 
         {/* Backdrop (Gridlines) */}
         <Container className="fixed inset-y-0 inset-x-0 -z-px">
-          <div
+          <section
             className={`${Backdrop.backdrpGrdlne} supports-grid:grid grid-cols-2 sm:grid-cols-4`}
           >
             <div className={`${Backdrop.backdrpGrdlneItms}`}></div>
@@ -36,18 +36,17 @@ const Layouts = ({ children }) => {
               className={`hidden sm:flex ${Backdrop.backdrpGrdlneItms}`}
             ></div>
             <div className={`${Backdrop.backdrpGrdlneItms}`}></div>
-          </div>
+          </section>
         </Container>
 
         {/* Backdrop (Beams) */}
-        <Container className="select-none pointer-events-none absolute inset-y-0 inset-x-0 -z-px">
+        <Container className="absolute inset-y-0 inset-x-0 -z-px">
           {/* Beams (Left) */}
           <section className="absolute top-0 sm:top-[149px] lg:top-[102px] xl:top-[145px] -left-[234px] sm:-left-[189px] xl:-left-[213px] right-auto bottom-auto transform rotate-[-23deg] sm:rotate-0">
             <ImagesFill
               className="flex blur-[20px] relative h-[516px] 2xl:h-[516px] w-[393px] 2xl:w-[493px]"
               src={`${publicRuntimeConfig.staticFolder}/backdrop/backdrop-beams-left.png`}
-              alt={`${publicRuntimeConfig.appName} (Beams - Left)`}
-              priority={true}
+              alt="W3W (Beams - Left)"
             />
           </section>
 
@@ -56,17 +55,16 @@ const Layouts = ({ children }) => {
             <ImagesFill
               className="flex blur-[20px] relative h-[516px] 2xl:h-[516px] w-[393px] 2xl:w-[493px]"
               src={`${publicRuntimeConfig.staticFolder}/backdrop/backdrop-beams-right.png`}
-              alt={`${publicRuntimeConfig.appName} (Beams - Right)`}
-              priority={true}
+              alt="W3W (Beams - Right)"
             />
           </section>
         </Container>
 
         {/* Sticky Textline */}
-        <div className="fixed inset-y-0 inset-x-0 select-none pointer-events-none z-[25]">
+        <div className="fixed inset-y-0 inset-x-0 select-none pointer-events-none z-[60]">
           <Container className="absolute inset-y-0 inset-x-0 h-full min-h-screen">
             <section
-              className={`${Card.stckyTxtline} flex flex-row gap-x-4 sm:gap-x-6 font-fira-code font-medium uppercase`}
+              className={`${Card.stckyTxtline} flex flex-row gap-x-4 sm:gap-x-6 font-fira-code uppercase`}
             >
               <ul className={`${Card.stckyTxtlineGroup} whitespace-nowrap`}>
                 <li className="text-[10px] sm:text-xs lg:text-base leading-[initial]">
@@ -138,7 +136,8 @@ const Layouts = ({ children }) => {
           </Container>
         </div>
 
-        {/* Main (App) */}
+        {/* Main */}
+
         {children}
 
         {/* Footer */}

@@ -1,18 +1,18 @@
-import { Element } from "react-scroll";
 import dynamic from "next/dynamic";
 
 // Css
 import Card from "@styles/components/Card.module.css";
 
 // Ui - Components
-const SubHeading = dynamic(() => import("@components/UI/SubHeading"));
+const SubHeading = dynamic(() =>
+  import("@components/UI/SubHeading/SubHeading")
+);
 
 const LySchedule = () => {
   return (
     <>
-      <Element
+      <section
         id="schedule"
-        name="schedule"
         className="flex flex-col relative mt-[102px] px-0 sm:px-4"
       >
         <SubHeading
@@ -28,7 +28,7 @@ const LySchedule = () => {
           className={`${Card.bxCntentShdow} supports-grid:grid grid-cols-12 gap-y-4 gap-x-4 mt-6 sm:mt-8 ${Card.on}`}
         >
           <div className="col-span-full sm:col-span-6 lg:col-span-4">
-            <article
+            <section
               className={`${Card.bx} bg-grdients-black flex flex-col items-start blur-sm py-4 px-4`}
             >
               <div>
@@ -39,10 +39,10 @@ const LySchedule = () => {
                   Test
                 </span>
               </div>
-            </article>
+            </section>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-4">
-            <article
+            <section
               className={`${Card.bx} bg-grdients-black flex flex-col items-start blur-sm py-4 px-4`}
             >
               <div>
@@ -53,10 +53,10 @@ const LySchedule = () => {
                   Test
                 </span>
               </div>
-            </article>
+            </section>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-4">
-            <article
+            <section
               className={`${Card.bx} bg-grdients-black flex flex-col items-start blur-sm py-4 px-4`}
             >
               <div>
@@ -67,10 +67,10 @@ const LySchedule = () => {
                   Test
                 </span>
               </div>
-            </article>
+            </section>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-4">
-            <article
+            <section
               className={`${Card.bx} bg-grdients-black flex flex-col items-start blur-sm py-4 px-4`}
             >
               <div>
@@ -81,10 +81,10 @@ const LySchedule = () => {
                   Test
                 </span>
               </div>
-            </article>
+            </section>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-4">
-            <article
+            <section
               className={`${Card.bx} bg-grdients-black flex flex-col items-start blur-sm py-4 px-4`}
             >
               <div>
@@ -95,10 +95,10 @@ const LySchedule = () => {
                   Test
                 </span>
               </div>
-            </article>
+            </section>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-4">
-            <article
+            <section
               className={`${Card.bx} bg-grdients-black flex flex-col items-start blur-sm py-4 px-4`}
             >
               <div>
@@ -109,10 +109,10 @@ const LySchedule = () => {
                   Test
                 </span>
               </div>
-            </article>
+            </section>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-4 hidden lg:flex lg:flex-col">
-            <article
+            <section
               className={`${Card.bx} bg-grdients-black flex flex-col items-start blur-sm py-4 px-4`}
             >
               <div>
@@ -123,10 +123,10 @@ const LySchedule = () => {
                   Test
                 </span>
               </div>
-            </article>
+            </section>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-4 hidden lg:flex lg:flex-col">
-            <article
+            <section
               className={`${Card.bx} bg-grdients-black flex flex-col items-start blur-sm py-4 px-4`}
             >
               <div>
@@ -137,10 +137,10 @@ const LySchedule = () => {
                   Test
                 </span>
               </div>
-            </article>
+            </section>
           </div>
           <div className="col-span-full sm:col-span-6 lg:col-span-4 hidden lg:flex lg:flex-col">
-            <article
+            <section
               className={`${Card.bx} bg-grdients-black flex flex-col items-start blur-sm py-4 px-4`}
             >
               <div>
@@ -151,10 +151,10 @@ const LySchedule = () => {
                   Test
                 </span>
               </div>
-            </article>
+            </section>
           </div>
         </div>
-      </Element>
+      </section>
     </>
   );
 };

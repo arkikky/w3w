@@ -1,5 +1,5 @@
 import getConfig from "next/config";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 // # Get .config
@@ -25,16 +25,12 @@ const BrandLogo = ({ url, images, alt, height, width }) => {
       >
         {addImgs && (
           <Image
-            className="img-fill w-max xl:w-revert-layer"
-            src={addImgs}
             alt={addAlt}
+            src={addImgs}
             height={addHeight}
             width={addWitdth}
-            sizes="(min-width: 1280px) 100vw,
-              (min-width: 1024px) 299vw,
-              (min-width: 640px) 387vw,
-              913vw"
-            priority
+            placeholder="blur"
+            blurDataURL={`${publicRuntimeConfig.blurData}`}
           />
         )}
       </Link>

@@ -5,9 +5,12 @@ import Image from "next/legacy/image";
 const { publicRuntimeConfig } = getConfig();
 
 // Css
+import Imags from "@styles/components/Images.module.css";
 
-const ImagesFill = ({ className, src, alt, priority = false }) => {
-  const defltClass = `flex relative`;
+const ImagesFill = ({ className, src, alt, imgAuto = false }) => {
+  const defltClass = `${
+    imgAuto == true ? `${Imags.imgsFill}` : imgAuto == false
+  } flex relative`;
   const addClassName = className
     ? `${defltClass} ${className}`
     : `${defltClass}`;
@@ -21,32 +24,16 @@ const ImagesFill = ({ className, src, alt, priority = false }) => {
 
   return (
     <>
-      {priority === false && (
-        <div className={`${addClassName}`}>
-          <Image
-            className={``}
-            alt={addImagsAlt}
-            src={addImags}
-            layout={"fill"}
-            objectFit={"cover"}
-            objectPosition={"center"}
-          />
-        </div>
-      )}
-
-      {priority === true && (
-        <div className={`${addClassName}`}>
-          <Image
-            className={``}
-            alt={addImagsAlt}
-            src={addImags}
-            layout={"fill"}
-            objectFit={"cover"}
-            objectPosition={"center"}
-            priority
-          />
-        </div>
-      )}
+      <div className={`${addClassName}`}>
+        <Image
+          className={``}
+          alt={addImagsAlt}
+          src={addImags}
+          layout={"fill"}
+          objectFit={"cover"}
+          objectPosition={"center"}
+        />
+      </div>
     </>
   );
 };

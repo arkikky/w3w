@@ -12,9 +12,7 @@ const PostLink = ({
   const defltClass =
     withIcons == true
       ? `flex flex-row items-center text-black-100 text-body-base font-semibold outline-none hocus:outline-none transition duartion-300 ease-in-out`
-      : withIcons == false
-      ? ``
-      : (withIcons = "");
+      : "text-black-100 text-body-base font-semibold outline-none hocus:outline-none transition duartion-300 ease-in-out";
 
   const addClassName = className
     ? `${defltClass} ${className}`
@@ -26,7 +24,7 @@ const PostLink = ({
   return (
     <>
       {/* PostLink (Default) */}
-      {typePost === "base" && withIcons == false && children === null && (
+      {typePost === "base" && withIcons == false && children == null && (
         <Link
           className={`${addClassName}`}
           href={addUrl}
@@ -73,7 +71,7 @@ const PostLink = ({
       )}
 
       {/* PostLink (With Blank Link) */}
-      {typePost === "blank-link" && withIcons == false && children === null && (
+      {typePost === "blank-link" && withIcons == false && children == null && (
         <Link
           className={`${addClassName}`}
           href={addUrl}

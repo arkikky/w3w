@@ -5,8 +5,8 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
     "./components/**/**/*.{js,jsx}",
-    "./layouts/**/**/*.{js,jsx}",
-    "./pages/**/**/*.{js,jsx}",
+    "./layouts/**/*.{js,jsx}",
+    "./pages/**/*.{js,jsx}",
   ],
   theme: {
     extend: {
@@ -22,7 +22,8 @@ module.exports = {
         gray: {
           100: "#555555",
           300: "#272727",
-          400: "#878787",
+          // 400: "#878787",
+          400: "#A8A8A8",
           500: "#C0C0C0",
           600: "#7B7B7B",
           700: "#757575",
@@ -54,18 +55,6 @@ module.exports = {
         18: "72px",
         22: "86px",
         34: "136px",
-        "revert-layer": "revert-layer",
-      },
-      lineClamp: {
-        7: "7",
-        8: "8",
-        9: "9",
-        10: "10",
-        11: "11",
-        12: "12",
-        13: "13",
-        14: "14",
-        15: "15",
       },
       screens: {
         xxs: "381px",
@@ -93,9 +82,13 @@ module.exports = {
       },
     },
   },
+  corePlugins: {
+    container: false,
+  },
   plugins: [
+    // Plugin (Init)
     require("@tailwindcss/typography"),
-    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/forms"),
 
     // Variant
     ({ addVariant }) => {
@@ -130,6 +123,25 @@ module.exports = {
           "@screen 2xl": {
             maxWidth: "1312px",
           },
+        },
+      });
+    },
+
+    // Word Break
+    ({ addUtilities }) => {
+      addUtilities({
+        ".break-area": {
+          wordBreak: "break-word",
+        },
+      });
+    },
+
+    // Background Cover Shadow
+    ({ addUtilities }) => {
+      addUtilities({
+        ".bg-shadow-black": {
+          background:
+            "linear-gradient(180deg, rgba(30, 30, 30, 0) 0%, #1E1E1E 100%)",
         },
       });
     },
@@ -214,54 +226,6 @@ module.exports = {
           borderWidth: "1px",
           borderColor: theme("borderColor.primary"),
           color: theme("colors.white"),
-        },
-      });
-    },
-
-    // Word Break
-    ({ addUtilities }) => {
-      addUtilities({
-        ".break-area": {
-          wordBreak: "break-word",
-        },
-      });
-    },
-
-    // Background Cover Shadow
-    ({ addUtilities }) => {
-      addUtilities({
-        ".bg-shadow-black": {
-          background:
-            "linear-gradient(180deg, rgba(30, 30, 30, 0) 0%, #1E1E1E 100%)",
-        },
-      });
-    },
-
-    // Background Linear Gradient
-    ({ addUtilities }) => {
-      addUtilities({
-        ".bg-gradient-purple": {
-          background:
-            "linear-gradient(90deg, #9F29F1 0%, #BE36C6 77.08%, #C639BB 96.88%)",
-        },
-      });
-    },
-
-    // Images
-    ({ addUtilities, theme }) => {
-      addUtilities({
-        ".img-cover": {
-          display: "flex",
-          backgroundSize: theme("backgroundSize.cover"),
-          objectFit: "cover",
-          position: "relative",
-          height: theme("height.full"),
-          width: theme("width.full"),
-        },
-        ".img-fill": {
-          display: "flex",
-          position: "relative",
-          height: "auto !important",
         },
       });
     },

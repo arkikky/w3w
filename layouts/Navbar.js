@@ -1,16 +1,16 @@
 import { useState, useEffect, useCallback } from "react";
-import { Link } from "react-scroll";
 import getConfig from "next/config";
+import { Link } from "react-scroll";
 import dynamic from "next/dynamic";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 // # Get .config
 const { publicRuntimeConfig } = getConfig();
 
 // Ui - Components
 const Container = dynamic(() => import("@components/Container"));
+const Buttons = dynamic(() => import("@components/UI/Buttons/Buttons"));
 const PostLink = dynamic(() => import("@components/UI/Post/PostLink"));
-const Buttons = dynamic(() => import("@components/UI/Buttons"));
 
 const Navbar = () => {
   // Toggle
@@ -32,8 +32,10 @@ const Navbar = () => {
   useEffect(() => {
     var Scroll = require("react-scroll");
     var Events = Scroll.Events;
+
     const nvBtnToggle = document.querySelector(".navbar-toggle");
     const nvMnu = document.querySelector(".navbar-nav");
+
     Events.scrollEvent.register("end", (to, element) => {
       if (nvMnu.classList.contains("on") == true) {
         setTimeout(() => {
@@ -56,15 +58,16 @@ const Navbar = () => {
               className="navbar-brand flex items-center outline-none py-0 sm:py-0.5"
               url=""
             >
-              <Image
-                className="flex relative h-6 sm:h-7 lg:h-8 w-max sm:w-[94px] lg:w-[105px]"
-                src={`${publicRuntimeConfig.staticFolder}/w3w.svg`}
-                alt={`${publicRuntimeConfig.appName} (LOGO)`}
-                height={32}
-                width={105}
-                placeholder="blur"
-                blurDataURL={`${publicRuntimeConfig.blurData}`}
-              />
+              <div className="flex relative h-7 lg:h-8 w-[94px] lg:w-[105px]">
+                <Image
+                  src={`${publicRuntimeConfig.staticFolder}/w3w.svg`}
+                  alt={`${publicRuntimeConfig.appName} (LOGO)`}
+                  layout="fill"
+                  placeholder="blur"
+                  blurDataURL={`${publicRuntimeConfig.blurData}`}
+                  priority
+                />
+              </div>
             </PostLink>
             <div className="flex flex-row items-center">
               <ul
@@ -76,25 +79,23 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
-                    href="about"
                     activeClass="active"
                     to="about"
-                    smooth={"easeInOutQuart"}
+                    smooth={true}
                     offset={-149}
                     duration={300}
                   >
-                    About
+                    {"About"}
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
-                    href="whatbethere"
                     activeClass="active"
                     to="whatbethere"
                     spy={true}
                     hashSpy={true}
-                    smooth={"easeInOutQuart"}
+                    smooth={true}
                     offset={-135}
                     duration={300}
                   >
@@ -104,46 +105,43 @@ const Navbar = () => {
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
-                    href="schedule"
                     activeClass="active"
                     to="schedule"
                     spy={true}
                     hashSpy={true}
-                    smooth={"easeInOutQuart"}
+                    smooth={true}
                     offset={-135}
                     duration={300}
                   >
-                    Schedules
+                    {"Schedules"}
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
-                    href="mentorsSpeakers"
                     activeClass="active"
                     to="mentorsSpeakers"
                     spy={true}
                     hashSpy={true}
-                    smooth={"easeInOutQuart"}
+                    smooth={true}
                     offset={-135}
                     duration={300}
                   >
-                    Mentors
+                    {"Mentors"}
                   </Link>
                 </li>
                 <li className="menu-item">
                   <Link
                     className="menu-link uppercase outline-none"
-                    href="sponsor"
                     activeClass="active"
                     to="sponsor"
                     spy={true}
                     hashSpy={true}
-                    smooth={"easeInOutQuart"}
+                    smooth={true}
                     offset={-135}
                     duration={300}
                   >
-                    Sponsor
+                    {"Sponsor"}
                   </Link>
                 </li>
               </ul>
@@ -159,11 +157,9 @@ const Navbar = () => {
                 />
                 <button
                   className="navbar-toggle flex lg:hidden outline-none ml-3"
-                  aria-label="togleMnuPrimary"
-                  aria-labelledby="togleMnuPrimary"
+                  data-toggle="#nvMnuPrimary"
+                  data-icons="#hmbrgerMnu"
                   onClick={toggleMenu}
-                  type="button"
-                  role="button"
                 >
                   <div
                     id="hmbrgerMnu"
