@@ -17,20 +17,18 @@ const LyTimeline = () => {
     <>
       <div className="mb-[121px]">
         <article className="supports-grid:grid grid-cols-4 sm:grid-cols-12 relative px-0 sm:px-4">
-          <div className="col-span-full sm:col-span-6">
-            <div className="relative">
-              <Image
-                className={`img-fill !relative mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
-                src={`${publicRuntimeConfig.staticFolder}/timeline/catch-project-showcases.png`}
-                alt={`${publicRuntimeConfig.appName} (Timeline)`}
-                fill
-                sizes="(min-width: 1280px) 100vw,
+          <div className="col-span-full sm:col-span-6 relative">
+            <Image
+              className={`img-fill !relative mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
+              src={`${publicRuntimeConfig.staticFolder}/timeline/catch-project-showcases.png`}
+              alt={`${publicRuntimeConfig.appName} (Timeline)`}
+              fill
+              sizes="(min-width: 1280px) 100vw,
                 (min-width: 1024px) 463vw,
                 (min-width: 640px) 591vw,
                 657vw"
-                priority
-              />
-            </div>
+              priority
+            />
           </div>
           <div className="col-span-full sm:col-span-6 flex items-center justify-center relative px-0 sm:pl-7">
             <div className={`${Timeline.timelnCntentContnt}`}>
@@ -56,77 +54,29 @@ const LyTimeline = () => {
               </p>
             </div>
           </div>
-          <div className="col-span-full sm:col-span-6 order-first sm:order-last">
-            <div className="relative">
-              {/* <Image
-                className={`img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
-                src={`${publicRuntimeConfig.staticFolder}/timeline/solve-your-problem.png`}
-                alt={`${publicRuntimeConfig.appName} (Timeline)`}
-                height={650}
-                width={650}
-                sizes="(min-width: 1280px) 100vw,
+          <div className="col-span-full sm:col-span-6 order-first sm:order-last relative">
+            <Image
+              className="img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer"
+              src={`${publicRuntimeConfig.staticFolder}/timeline/solve-your-problem.png`}
+              alt={`${publicRuntimeConfig.appName} (Timeline)`}
+              height={650}
+              width={650}
+              sizes="(min-width: 1280px) 100vw,
                 (min-width: 1024px) 463vw,
                 (min-width: 640px) 591vw,
                 657vw"
-                priority
-              /> */}
-              <ImagesFill
-                className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
-                src={`${publicRuntimeConfig.staticFolder}/timeline/solve-your-problem.png`}
-                alt={`${publicRuntimeConfig.appName} (Timelines)`}
-                priority={true}
-              />
-
-              {/* Backdrop (Stairs) */}
-              {/* <div className="hidden sm:flex absolute top-auto -left-[137px] lg:-left-[175px] xl:-left-[215px] right-auto -bottom-[119px] lg:-bottom-[155px] xl:-bottom-[211px] h-[247px] w-[273px] lg:h-[365px] lg:w-[409px] xl:h-[445.15px] xl:w-[479.99px] transform -rotate-[2deg] -z-px">
-              <Image
-                className="h-full w-revert-layer"
-                src={`${publicRuntimeConfig.staticFolder}/backdrop/backdrop-linecircuit-tengah.svg`}
-                alt={`${publicRuntimeConfig.appName} (Line - Backdrop Timeline)`}
-                sizes="100vw"
-                height={650}
-                width={650}
-                priority
-              />
-            </div> */}
-            </div>
+              priority
+            />
           </div>
         </article>
         <article className="supports-grid:grid grid-cols-4 sm:grid-cols-12 relative mt-16 sm:mt-0 px-0 sm:px-4">
-          <div className="col-span-full sm:col-span-6">
-            <div className="relative">
-              {/* <Image
-                className={`img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
-                src={`${publicRuntimeConfig.staticFolder}/timeline/learn-all-about.png`}
-                alt={`${publicRuntimeConfig.appName} (Timeline)`}
-                height={650}
-                width={650}
-                sizes="(min-width: 1280px) 100vw,
-                (min-width: 1024px) 463vw,
-                (min-width: 640px) 591vw,
-                657vw"
-                priority
-              /> */}
-              <ImagesFill
-                className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
-                src={`${publicRuntimeConfig.staticFolder}/timeline/learn-all-about.png`}
-                alt={`${publicRuntimeConfig.appName} (Timelines)`}
-                priority={true}
-              />
-
-              {/* Backdrop (Stairs) */}
-              {/* <div className="hidden sm:flex absolute top-auto left-auto -right-[139px] lg:-right-[175px] xl:-right-[206px] -bottom-[131px] lg:-bottom-[173px] xl:-bottom-[208px] h-[247px] w-[273px] lg:h-[351.15px] lg:w-[385.99px] xl:h-[389.15px] xl:w-[435.99px] transform rotate-[4deg] -z-px">
-              <Image
-                className="flex relative h-full w-full"
-                src={`${publicRuntimeConfig.staticFolder}/backdrop/backdrop-linecircuit-bawah.svg`}
-                alt={`${publicRuntimeConfig.appName} (Line - Backdrop Timeline)`}
-                sizes="100vw"
-                height={650}
-                width={650}
-                priority
-              />
-            </div> */}
-            </div>
+          <div className="col-span-full sm:col-span-6 relative">
+            <ImagesFill
+              className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
+              src={`${publicRuntimeConfig.staticFolder}/timeline/learn-all-about.png`}
+              alt={`${publicRuntimeConfig.appName} (Timelines)`}
+              priority={true}
+            />
           </div>
           <div className="col-span-full sm:col-span-6 timelnsCntentRight flex items-center justify-center px-0 sm:pl-7">
             <div className={`${Timeline.timelnCntentContnt}`}>
@@ -152,27 +102,19 @@ const LyTimeline = () => {
               </p>
             </div>
           </div>
-          <div className="col-span-full sm:col-span-6 timelnsImgsLeft order-first sm:order-last">
-            <div className="relative">
-              {/* <Image
-                className={`img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
-                src={`${publicRuntimeConfig.staticFolder}/timeline/network-and-participate.png`}
-                alt={`${publicRuntimeConfig.appName} (Timeline)`}
-                height={650}
-                width={650}
-                sizes="(min-width: 1280px) 100vw,
+          <div className="col-span-full sm:col-span-6 timelnsImgsLeft order-first sm:order-last relative">
+            <Image
+              className="img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer"
+              src={`${publicRuntimeConfig.staticFolder}/timeline/network-and-participate.png`}
+              alt={`${publicRuntimeConfig.appName} (Timeline)`}
+              height={650}
+              width={650}
+              sizes="(min-width: 1280px) 100vw,
                 (min-width: 1024px) 463vw,
                 (min-width: 640px) 591vw,
                 657vw"
-                priority
-              /> */}
-              <ImagesFill
-                className={`${Imags.imgsFill} mx-auto h-auto w-full xs:w-[387px] sm:w-full`}
-                src={`${publicRuntimeConfig.staticFolder}/timeline/network-and-participate.png`}
-                alt={`${publicRuntimeConfig.appName} (Timelines)`}
-                priority={true}
-              />
-            </div>
+              priority
+            />
           </div>
         </article>
       </div>

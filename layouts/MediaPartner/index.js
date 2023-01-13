@@ -33,9 +33,9 @@ const LyMediaPartner = () => {
             height={stDataRslt.height}
             width={stDataRslt.width}
             sizes="(min-width: 1280px) 100vw,
-            (min-width: 1024px) 343vw,
-            (min-width: 640px) 451vw,
-            967vw"
+              (min-width: 1024px) 343vw,
+              (min-width: 640px) 451vw,
+              967vw"
             placeholder="blur"
             blurDataURL={`${publicRuntimeConfig.blurData}`}
             priority

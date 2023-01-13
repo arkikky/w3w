@@ -31,9 +31,9 @@ const BrandLogo = ({ url, images, alt, height, width }) => {
             height={addHeight}
             width={addWitdth}
             sizes="(min-width: 1280px) 100vw,
-            (min-width: 1024px) 299vw,
-            (min-width: 640px) 387vw,
-            913vw"
+              (min-width: 1024px) 299vw,
+              (min-width: 640px) 387vw,
+              913vw"
             priority
           />
         )}
