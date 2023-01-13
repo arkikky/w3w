@@ -118,9 +118,6 @@
 .bxRdshow span img {
   @apply grayscale;
   @apply object-right-top lg:object-center;
-
-  /* transform: scale(1.5) translateX(54px) translateY(10px);
-  @apply transform scale-y-[1.6] scale-x-[1.7] sm:scale-x-[1.6] lg:scale-100 translate-x-[96px] sm:translate-x-[185px] lg:translate-x-0 translate-y-[15px] sm:-translate-y-[17px] lg:translate-y-0; */
 }
 
 .bxRdshowContent {
