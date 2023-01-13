@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import getConfig from "next/config";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -16,6 +17,7 @@ const App = ({ Component, pageProps }) => {
     return Component.getLayout(
       <>
         <Component {...pageProps} />
+        <Analytics />
       </>
     );
   }
@@ -27,7 +29,7 @@ const App = ({ Component, pageProps }) => {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href={"/favicon.ico"} />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -50,6 +52,7 @@ const App = ({ Component, pageProps }) => {
       {/* Main (App) */}
       <Layouts>
         <Component {...pageProps} />
+        <Analytics />
       </Layouts>
     </>
   );
