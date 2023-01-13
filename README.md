@@ -1,11 +1,5 @@
 [![DeepSource](https://deepsource.io/gh/arkikky/w3w.svg/?label=active+issues&show_trend=true&token=5KfluZKn5-RemlYeSNpXZYQW)](https://deepsource.io/gh/arkikky/w3w/?ref=repository-badge) [![DeepSource](https://deepsource.io/gh/arkikky/w3w.svg/?label=resolved+issues&show_trend=true&token=5KfluZKn5-RemlYeSNpXZYQW)](https://deepsource.io/gh/arkikky/w3w/?ref=repository-badge)
 
-- 👋 Hi, I’m ikky
-- 👀 I’m interested in Frontend Web Developer
-- 🌱 I’m currently learning HTML5, CSS3, Sass, Bootstrap, Tailwind CSS, JavaScript, Next Js, Figma & Adobe Photoshop
-- 💞️ I’m looking to collaborate on Frontend Web Developer
-- 📫 How to reach me at ikky.andreansyah@gmail.com
-
 # W3W | Builders Convention Focused on Web3
 Hi. I'm is W3W theme or Builders Convention Focused on Web3, if you will. I am a theme meant for hacking so don't use me as Parent Theme. That's what I'm here for.
 
@@ -50,3 +44,8 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 3. Run `npm run dev`or `yarn dev`
 4. Make your changes
 5. Thanks for clone my repo, and enjoy 💞️
+
+### From Creator
+
+- 👋 Hi, I’m ikky
+- 📫 How to reach me at my email : ikky.andreansyah@gmail.com
