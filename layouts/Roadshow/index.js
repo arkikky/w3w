@@ -30,12 +30,12 @@ const Roashow = () => {
     <>
       <section id="roadshow" className="flex flex-col">
         {resRdshowMble && (
-          <div className="supports-grid:grid xl:hidden grid-cols-12 gap-y-4 gap-x-4 mb-[50px] px-0 sm:px-4">
+          <div className="supports-grid:grid lg:hidden grid-cols-12 gap-y-4 gap-x-4 mb-[50px] px-0 sm:px-4">
             {resRdshowMble}
           </div>
         )}
         {resRdshowDsktop && (
-          <div className="hidden xl:supports-grid:grid xl:grid-cols-12 xl:gap-y-6 lg:gap-y-0 gap-x-4 lg:gap-x-6 mb-[50px] px-0 sm:px-4">
+          <div className="hidden lg:supports-grid:grid lg:grid-cols-12 lg:gap-y-6 lg:gap-y-0 gap-x-4 lg:gap-x-6 mb-[50px] px-0 sm:px-4">
             {resRdshowDsktop}
           </div>
         )}
