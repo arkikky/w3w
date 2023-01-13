@@ -20,11 +20,10 @@ const LyTimeline = () => {
           <div className="col-span-full sm:col-span-6">
             <div className="relative">
               <Image
-                className={`img-fill mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
+                className={`img-fill !relative mx-auto w-max xs:w-[417px] sm:w-max xl:w-revert-layer`}
                 src={`${publicRuntimeConfig.staticFolder}/timeline/catch-project-showcases.png`}
                 alt={`${publicRuntimeConfig.appName} (Timeline)`}
-                height={578}
-                width={578}
+                fill
                 sizes="(min-width: 1280px) 100vw,
                 (min-width: 1024px) 463vw,
                 (min-width: 640px) 591vw,
