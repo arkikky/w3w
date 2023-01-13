@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://w3w-web.vercel.app/
+
+# Sitemaps
+Sitemap: https://w3w-web.vercel.app/sitemap.xml
