@@ -40,7 +40,7 @@ const Layouts = ({ children }) => {
         </Container>
 
         {/* Backdrop (Beams) */}
-        <Container className="absolute inset-y-0 inset-x-0 -z-px">
+        <Container className="select-none pointer-events-none absolute inset-y-0 inset-x-0 -z-px">
           {/* Beams (Left) */}
           <section className="absolute top-0 sm:top-[149px] lg:top-[102px] xl:top-[145px] -left-[234px] sm:-left-[189px] xl:-left-[213px] right-auto bottom-auto transform rotate-[-23deg] sm:rotate-0">
             <ImagesFill
