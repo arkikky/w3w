@@ -10,9 +10,9 @@ import mockFrmCretor from "@json/fromCreator.json";
 const LyFromCreator = () => {
   const [gtFrmCretor, stFrmCretor] = useState(mockFrmCretor);
 
-  const resFrmCretor = gtFrmCretor?.map((stDataRslt, i) => (
+  const resFrmCretor = gtFrmCretor?.map((stDataRslt) => (
     <div
-      key={i + 1}
+      key={stDataRslt.id}
       className="col-span-full sm:col-span-6 lg:col-span-4 xl:col-span-4 grayscale hover:grayscale-0 transition duration-500 ease-in-out"
     >
       <>

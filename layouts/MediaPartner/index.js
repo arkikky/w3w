@@ -16,10 +16,10 @@ import mockMdiaPartnr from "@json/mediaPartner.json";
 const LyMediaPartner = () => {
   const [gtMdiaPartnr, stMdiaPartnr] = useState(mockMdiaPartnr);
 
-  const resMdiaPartnr = gtMdiaPartnr?.map((stDataRslt, i) => {
+  const resMdiaPartnr = gtMdiaPartnr?.map((stDataRslt) => {
     return (
       <Link
-        key={i + 1}
+        key={stDataRslt.id}
         className="flex flex-1 sm:flex-none items-center justify-center outline-none px-4"
         href={stDataRslt.url}
         target="_blank"

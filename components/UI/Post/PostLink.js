@@ -26,7 +26,7 @@ const PostLink = ({
   return (
     <>
       {/* PostLink (Default) */}
-      {typePost === "base" && withIcons == false && children == null && (
+      {typePost === "base" && withIcons == false && children === null && (
         <Link
           className={`${addClassName}`}
           href={addUrl}
@@ -73,7 +73,7 @@ const PostLink = ({
       )}
 
       {/* PostLink (With Blank Link) */}
-      {typePost === "blank-link" && withIcons == false && children == null && (
+      {typePost === "blank-link" && withIcons == false && children === null && (
         <Link
           className={`${addClassName}`}
           href={addUrl}

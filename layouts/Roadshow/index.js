@@ -10,8 +10,8 @@ import mockRdshow from "@json/roadshow.json";
 const Roashow = () => {
   const [gtRdshow, stRdshow] = useState(mockRdshow);
 
-  const resFrmCretor = gtRdshow?.map((stDataRslt, i) => (
-    <div key={i + 1} className="col-span-full lg:col-span-4">
+  const resFrmCretor = gtRdshow?.map((stDataRslt) => (
+    <div key={stDataRslt.id} className="col-span-full lg:col-span-4">
       <>
         <CardRoadshow {...stDataRslt}></CardRoadshow>
       </>
