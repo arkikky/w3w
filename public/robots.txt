@@ -7,3 +7,4 @@ Host: https://w3w-dev.vercel.app/
 
 # Sitemaps
 Sitemap: https://w3w-dev.vercel.app/sitemap.xml
+Sitemap: https://w3w-dev.vercel.app/server-sitemap.xml
