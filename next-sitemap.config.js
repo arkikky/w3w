@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 const siteURL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.coinvestasi.com/";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://w3w-dev.vercel.app/";
 
 const nextSitemapConfig = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
