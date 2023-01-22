@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Init (Configuration) */
+::selection {
+  @apply bg-primary/50 text-white;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-black-100;
+  /* @apply text-white font-fira-code text-base font-medium; */
+  @apply h-screen;
+}
+
+/* Body (Scrollbar) */
+body::-webkit-scrollbar {
+  @apply w-2.5;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-[#2d2f33];
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply bg-[#4e525a]; 
+  @apply rounded-full;
+  @apply border-none;
+}
+
+/* Fonts */
+@layer base {
+  @font-face {
+    font-family: 'W3W Bold';
+    src: url('/assets/fonts/W3W-Bold.woff2') format('woff2'),
+      url('/assets/fonts/W3W-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'W3W Regular';
+    src: url('/assets/fonts/W3W-Regular.woff2') format('woff2'),
+      url('/assets/fonts/W3W-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+/* Text (Outline) */
+@layer utilities {
+  .text-otlne {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+  }
+
+  .text-otlne-white {
+    -webkit-text-stroke-color: #FFFFFF;
+  }
+}
+
+/* Utilities */ 
+@layer utilities {
+  .bg-grdients-black {
+    @apply bg-gradient-to-r from-[#2D2D2D] to-[#2D2D2D];
+  }
+}
+
+/* Hamburger */
+.hmbrger {
+  @apply relative;
+}
+
+.hmbrger-itms {
+  @apply border-[1px] border-solid border-white rounded-3xl;
+  @apply mb-2 last:mb-0;
+  @apply h-0 w-[18px];
+}
+
+.hmbrger.close .hmbrger-itms {
+  @apply first:rotate-[-45deg] first:translate-y-[5px];
+  @apply last:rotate-45 last:translate-y-[-5px];
+}
+
+/* Navbar */
+.navbar {
+  @apply bg-transparent;
+  @apply fixed top-8 sm:top-4 inset-x-0;
+  @apply z-base;
+
+  @apply transition-[background-color] duration-300 ease-in-out;
+  @apply transition-[top] ease-in-out;
+}
+
+.navbar.active {
+  @apply bg-[#2A2A2A]/90;
+  box-shadow: 0px 4px 33px rgba(45, 62, 94, 0.09);
+  @apply top-0;
+  @apply z-xl;
+}
+
+.navbar-main {
+  @apply bg-transparent lg:bg-[#2A2A2A]/70;
+  @apply py-4 px-0 lg:px-5 xl:px-6;
+}
+
+.navbar.active .navbar-main {
+  @apply bg-transparent;
+}
+
+.navbar .nav {
+  background: linear-gradient(180deg, #1e1e1e 40%, rgba(30, 30, 30, 0.6));
+  @apply flex flex-col items-center justify-center;
+  @apply fixed inset-y-0 inset-x-0;
+  backface-visibility: hidden;
+  visibility: hidden;
+  @apply opacity-0;
+  @apply -z-px;
+  @apply transition-all duration-[0.3s] ease-in-out;
+}
+
+@screen lg {
+  .navbar .nav {
+    background: none;
+    @apply relative;
+    @apply flex flex-row;
+    backface-visibility: visible; 
+    @apply visible;
+    @apply opacity-100;
+    @apply z-10;
+  }
+}
+
+.navbar .nav.on {
+  backface-visibility: visible;
+  @apply visible;
+  @apply opacity-100;
+}
+
+.navbar .nav.menu .menu-item {
+  @apply flex flex-col sm:flex-row relative xl:static;
+  @apply mr-0 lg:mr-2 xl:mr-6 last:mr-0 mb-2 sm:mb-3 lg:mb-0 last:mb-0;
+  @apply transition duration-300 ease-in-out;
+}
+
+.navbar .nav.menu .menu-item a {
+  @apply cursor-pointer;
+  @apply text-white hocus:text-primary font-fira-code text-2xl sm:text-3xl lg:text-sm font-normal;
+  @apply outline-none;
+  @apply py-3 px-0;
+  @apply transition duration-300 ease-in-out;
+}
+
+.navbar .nav.menu .menu-item a.active {
+  @apply text-primary;
+}
