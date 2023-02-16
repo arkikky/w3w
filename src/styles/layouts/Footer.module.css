@@ -1,8 +1,0 @@
-/* Footer (Group Menu) */
-.footrGroupMnu {
-  @apply mt-6 first:mt-0 sm:mt-0;
-}
-
-.footrGroupMnu ul li a {
-  @apply text-white hocus:text-primary no-underline hocus:underline uppercase;
-}
