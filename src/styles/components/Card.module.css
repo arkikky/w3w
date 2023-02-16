@@ -1,0 +1,134 @@
+/* Box */
+.bx {
+  @apply flex flex-col relative;
+  @apply h-[172px];
+  @apply min-h-[172px];
+  @apply max-h-[172px];
+}
+
+.bxRounded {
+  @apply rounded-full;
+}
+
+.bxRoundedIcons {
+  @apply h-[120px];
+  @apply min-h-[120px];
+  @apply max-h-[120px];
+  @apply w-[120px];
+  @apply min-w-[120px];
+  @apply max-w-[120px];
+}
+
+/* Box (Content With Shadow) */
+.bxCntentShdow {
+  @apply relative;
+}
+
+.bxCntentShdow.on::after {
+  @apply content-[""];
+  @apply bg-shadow-black;
+
+  @apply absolute -inset-y-2 -inset-x-2;
+  @apply z-10;
+}
+
+/* Bnner */
+.bnner {
+  background-image: url("/assets/images/backdrop-banner.webp");
+  @apply bg-no-repeat bg-cover object-cover;
+}
+
+.bnnerWide { 
+  @apply relative;
+}
+
+.bnnerWideContent {
+  @apply px-4 sm:px-11 lg:px-0;
+  @apply max-w-full lg:max-w-[796px] xl:max-w-[1085px];
+}
+
+.bnnerWideContent .title {
+  @apply text-xl sm:text-3xl lg:text-[40px] lg:leading-tight; 
+}
+
+.bnnerIn {
+  @apply bg-gradient-purple;
+  @apply bg-no-repeat bg-cover object-cover;
+  @apply py-12 sm:py-14 lg:py-[77px] px-4 sm:px-14 lg:px-[94px];
+}
+
+.bnnerIn::before {
+  @apply content-[""];
+  background-image: url("/assets/images/backdrop/backdrop-ornaments-left.webp");
+  @apply bg-no-repeat bg-cover object-cover;
+  @apply absolute -top-[17px] sm:-top-[29px] lg:-top-[41px] -left-[17px] sm:-left-[29px] lg:-left-[41px] right-auto bottom-auto;
+  @apply w-[35px] sm:w-14 lg:w-[65px] h-[35px] sm:h-14 lg:h-[65px];
+}
+
+.bnnerIn::after {
+  @apply content-[""];
+  background-image: url("/assets/images/backdrop/backdrop-ornaments-right.webp");
+  @apply bg-no-repeat bg-cover object-cover;
+  @apply absolute top-auto left-auto -right-[25px] sm:-right-[54px] lg:-right-[68px] -bottom-[27px] sm:-bottom-[59px] lg:-bottom-[68px];
+  @apply w-[53px] sm:w-[113px] lg:w-[136px] h-[55px] sm:h-[119px] lg:h-[136px];
+}
+
+/* Banner Marque */
+.bnnerMarque {
+  @apply bg-gradient-purple;
+  @apply bg-no-repeat bg-cover object-cover;
+}
+
+/* Sticky Text Line */
+.stckyTxtline {
+  @apply relative;
+  @apply -mt-24 xl:-mt-[224px] 2xl:-mt-24;
+  @apply -ml-[1.6px] sm:-ml-[9px] lg:-ml-[13px] xl:-ml-[17px] 2xl:-ml-5;
+  @apply origin-top-left transform rotate-90;
+}
+ 
+.stckyTxtlineGroup {
+  @apply flex;
+}
+
+.stckyTxtlineGroup li {
+  @apply text-gray-400;
+  @apply mr-4 sm:mr-6 last:mr-0;
+}
+
+.stckyTxtlineGroup:nth-child(3n) li {
+  @apply text-primary;
+}
+
+/* RoadShow */
+.bxRdshow {
+  @apply h-[142px] sm:h-[198px] lg:h-[379px] xl:h-[549px];
+}
+
+.bxRdshow::after {
+  @apply content-[''];
+  background: linear-gradient(180deg, rgba(167, 30, 145, 0.48) 0%, rgba(255, 22, 218, 0.48) 100%);
+  @apply absolute inset-y-0 inset-x-0 z-[5];
+}
+
+.bxRdshow span {
+  @apply h-full w-full;
+}
+
+.bxRdshow span img {
+  @apply grayscale;
+  @apply object-right-top lg:object-center;
+}
+
+.bxRdshowContent {
+  @apply flex items-center justify-start lg:justify-center;
+  @apply absolute top-4 bottom-auto lg:inset-y-0 inset-x-4 lg:inset-x-0;
+  @apply z-10;
+}
+
+.bxRdshowContentLbel {
+  @apply flex items-center justify-between;
+  @apply absolute;
+  @apply top-auto inset-x-4 lg:inset-x-2 xl:inset-x-4 bottom-4 lg:bottom-2 xl:bottom-4;
+  @apply z-[12]; 
+}
