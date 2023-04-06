@@ -1,0 +1,33 @@
+/* Banner Marque */
+.bnnerMarque {
+  @apply bg-gradient-purple;
+  @apply bg-no-repeat bg-cover object-cover;
+}
+
+/* Sticky Text Line */
+.stckyTxtline {
+  @apply relative;
+  @apply -mt-24 xl:-mt-[529px] 2xl:-mt-[329px];
+  @apply -ml-[1.6px] sm:-ml-[9px] lg:-ml-[13px] xl:-ml-[17px] 2xl:-ml-5;
+  @apply origin-top-left transform rotate-90;
+}
+ 
+.stckyTxtlineGroup {
+  @apply flex;
+}
+
+.stckyTxtlineGroup li {
+  @apply text-gray-400;
+  @apply mr-4 sm:mr-6 last:mr-0;
+}
+
+.stckyTxtlineGroup:nth-child(3n) li {
+  @apply text-primary;
+}
+
+/* Bnner */
+.bnnerIn {
+  @apply bg-gradient-purple;
+  @apply bg-no-repeat bg-cover object-cover;
+  @apply py-12 sm:py-14 lg:py-[77px] px-4 sm:px-14 lg:px-[94px];
+}

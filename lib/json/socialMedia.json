@@ -1,0 +1,16 @@
+[{
+    "id": 1,
+    "url": "/",
+    "icons": "/assets/images/social-media/twitter.svg"
+  },
+  {
+    "id": 2,
+    "url": "/",
+    "icons": "/assets/images/social-media/instagram.svg"
+  },
+  {
+    "id": 3,
+    "url": "/",
+    "icons": "/assets/images/social-media/telegram.svg"
+  }
+]
