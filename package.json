@@ -1,0 +1,29 @@
+{
+  "name": "web3weekend.asia.2023",
+  "version": "0.3.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-fast-marquee": "^1.3.5",
+    "react-scroll": "^1.8.9",
+    "swiper": "^9.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss": "^3.3.1"
+  },
+  "author": "Web3weekend Asia 2023",
+  "license": "ISC"
+}
