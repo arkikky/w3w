@@ -1,0 +1,52 @@
+.disclosure {
+  @apply bg-transparent;
+  @apply border-[1.8px] border-solid border-black-50 hover:border-black-50 ui-open:border-primary/40 rounded-lg;
+  
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.disclosureHding {
+  @apply flex flex-row items-center justify-between;
+  @apply text-[#7A7A7A] hover:text-primary ui-open:text-primary font-fira-code text-base font-semibold text-left;
+  @apply relative;
+  @apply py-4 px-4 pr-16 sm:pr-24 xl:pr-32;
+  @apply w-full;
+  
+  @apply transition duration-300 ease-in-out;
+}
+
+.disclosureDesc {
+  @apply text-white font-fira-code text-base font-normal;
+  @apply mt-1.5;
+  @apply pl-4 pr-4 sm:pr-8 lg:pr-14 pb-5;
+}
+
+.disclosureDesc h4 {
+  @apply mb-1;
+}
+
+.disclosureDesc ul {
+  @apply list-decimal;
+  @apply pl-10;
+}
+
+.disclosureDesc ul ul {
+  @apply list-disc;
+  @apply pl-6;
+}
+
+.disclosureDesc ul li {
+  @apply mb-4 last:mb-0;
+}
+
+.disclosureDesc strong {
+  @apply text-white font-bold;
+}
+
+.disclosureDesc p {
+  @apply font-normal;
+}
+
+.disclosureDesc a {
+  @apply text-primary underline;
+}

@@ -1,0 +1,8 @@
+.mdlDesc ul {
+  @apply list-disc;
+  @apply mt-3 ml-6;
+}
+
+.mdlDesc ul li {
+  @apply mb-2 last:mb-0;
+}
